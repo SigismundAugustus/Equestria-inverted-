@@ -1,0 +1,358 @@
+﻿capital = 371
+oob = "WNG_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	tech_knights = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	fleet_in_being = 1
+}
+
+set_convoys = 200
+set_stability = 0.5
+set_war_support = 0.7
+
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 13
+		}
+		
+		fascism = {
+			popularity = 29
+		}
+		
+		communism = {
+			popularity = 21
+		}
+		
+		neutrality = {
+			popularity = 37
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = {
+	WNG_rampant_unemployment
+	WNG_famine
+	WNG_political_deadlock
+	WNG_braindrain
+}
+
+create_country_leader = {
+	name = "King Garibald Talonuel III"
+	desc = "POLITICS_GARIBALD_TALONUEL_DESC"
+	picture = "portrait_wingbardy_garibald_talonuel.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		soldier_king
+	}
+}
+
+create_country_leader = {
+	name = "Giulio Beakolini"
+	desc = "POLITICS_BEAKOLINI_DESC"
+	picture = "portrait_wingbardy_giulio_beakolini.dds"
+	expire = "1065.1.1"
+	ideology = fascism_ideology
+	traits = {
+		duce
+	}
+}
+
+create_country_leader = {
+	name = "Gallo Ventriglio"
+	desc = "POLITICS_GALLO_VENTRIGLIO_DESC"
+	picture = "Gallo_Ventriglio.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Antonino Proletarino"
+	desc = "POLITICS_ANTONINO_PROLETARINO"
+	picture = "portrait_wingbardy_antonino_proletarino.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Gietro Gadoglio"
+	picture = "Portrait_Wingbardy_Generic_land_2.dds"
+	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
+	skill = 1
+	id = 300
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Gemilio De Gono"
+	picture = "Portrait_Wingbardy_Generic_land_1.dds"
+	traits = { defensive_doctrine old_guard politically_connected trait_cautious }
+	skill = 1
+	id = 301
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Griffolf Graziani"
+	picture = "Portrait_Wingbardy_Generic_land_3.dds"
+	traits = { offensive_doctrine }
+	skill = 2
+	id = 302
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gino Griffallero"
+	picture = "Portrait_Wingbardy_Generic_land_1.dds"
+	traits = {  old_guard trait_cautious career_officer }
+	skill = 2
+	rank = 1
+	id = 303
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Giovanni Gesse"
+	picture = "Portrait_Wingbardy_Generic_land_3.dds"
+	id = 303
+	traits = {  armor_officer war_hero }
+	skill = 4
+	rank = 1
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+	id = 304
+}
+
+create_corps_commander = {
+	name = "Grifbastiano Visconti Grasca"
+	picture = "Portrait_Wingbardy_Generic_land_1.dds"
+	traits = { career_officer inflexible_strategist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 309
+}
+
+create_corps_commander = {
+	name = "Galon Gariboldi"
+	picture = "Portrait_Wingbardy_Generic_land_2.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 306
+}
+
+create_corps_commander = {
+	name = "Gabaldo Goddu"
+	picture = "Portrait_Wingbardy_Generic_land_3.dds"
+	traits = { career_officer trait_cautious }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 307
+}
+
+create_corps_commander = {
+	name = "Gitalo Galbo"
+	picture = "Portrait_Wingbardy_Gitalo_Galbo.dds"
+	traits = { career_officer politically_connected air_force_commander }
+	skill = 1
+	id = 304
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 308
+}
+
+create_navy_leader = {
+	name = "Ginigo Gampioni"
+	picture = "Portrait_wingbardy_Generic_navy_1.dds"
+	traits = { superior_tactician spotter }
+	skill = 2
+	id = 305
+}
+
+create_navy_leader = {
+	name = "Galberto Da Gara"
+	picture = "Portrait_wingbardy_Generic_navy_3.dds"
+	traits = { superior_tactician }
+	skill = 3
+	id = 310
+}
+
+create_navy_leader = {
+	name = "Giuseppe Grioravanzo"
+	picture = "Portrait_wingbardy_Generic_navy_2.dds"
+	traits = { superior_tactician }
+	skill = 3
+	id = 311
+}
+
+create_navy_leader = {
+	name = "Garlo Gergamini"
+	picture = "Portrait_wingbardy_Generic_navy_1.dds"
+	traits = { superior_tactician }
+	skill = 2
+	id = 312
+}
+
+create_navy_leader = {
+	name = "Gangelo Gachino"
+	picture = "Portrait_wingbardy_Generic_navy_3.dds"
+	traits = { superior_tactician spotter }
+	skill = 2
+	id = 313
+}
+
+create_faction = Southern_Kingdoms
+add_to_faction = ARA
+add_to_faction = TAL
+add_to_faction = FRN
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Gandiera Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Griffena Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
+}
+
+create_equipment_variant = {
+	name = "Navigatori Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Maestrale Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 3
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 3
+		ship_anti_air_upgrade = 3
+	}
+}
+
+create_equipment_variant = {
+	name = "Griffussano Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Montecuccoli Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_engine_upgrade = 3
+		ship_gun_upgrade = 3
+		ship_anti_air_upgrade = 3
+	}
+}
+
+create_equipment_variant = {
+	name = "Gara Class"
+	type = heavy_cruiser_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
+	}
+}
+
+#plane variants
+create_equipment_variant = {
+	name = "CR.42"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 1
+		plane_range_upgrade = 0  
+		plane_engine_upgrade = 2
+		plane_reliability_upgrade = 1
+	}
+}

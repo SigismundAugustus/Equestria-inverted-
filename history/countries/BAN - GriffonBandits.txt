@@ -1,0 +1,135 @@
+﻿capital = 532
+oob = "BAN_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 10
+		}
+		
+		fascism = {
+			popularity = 70
+		}
+		
+		communism = {
+			popularity = 10
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 10
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = {
+	limited_conscription
+	pre_industrial_society
+	BAN_bandit_culture
+	BAN_old_nobility
+	BAN_reeve's_rebels
+	BAN_wrecked_economy
+	BAN_unorganized_army
+}
+
+set_stability = 0.70
+set_country_flag = have_regular_puppets
+
+create_country_leader = {
+	name = "Count Cyril Bluecrest"
+	desc = ""
+	picture = "Bluecrest.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Blackrock"
+	desc = ""
+	picture = "Blackrock.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Count Cyril Bluecrest"
+	desc = ""
+	picture = "Bluecrest.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Reeve Blyeddin"
+	desc = ""
+	picture = "Reeve.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Kajetan Bronsfeather"
+	portrait_path = "gfx/leaders/BAN/GriffonPirate.tga"
+	traits = {
+		aggressive_assaulter
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Dominik Pinfeather"
+	portrait_path = "gfx/leaders/BAN/BANGen.tga"
+	traits = {
+		trait_mountaineer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ulrich Hiperion"
+	portrait_path = "gfx/leaders/BAN/BANGen2.tga"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}

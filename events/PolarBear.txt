@@ -1,0 +1,78 @@
+﻿add_namespace = polarbears
+
+country_event = { ### The introduction
+	id = polarbears.1
+	immediate = {log = "[Root.GetName]: event polarbear.1"}#Auto-logging
+	title = polarbears.1.t
+	desc = polarbears.1.d
+	picture = GFX_event_palace_hall
+	fire_only_once = yes
+
+	trigger = {
+		tag = PLB
+		date > 1007.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = polarbears.1.a
+		CRY = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 EQS = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 DRG = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 OLE = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 PNG = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 STG = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 GRF = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 GFF = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 BUF = {
+					country_event = { id = polarbears.2 days = 2 }
+					}
+		 STL = {
+					country_event = { id = polarbears.2 days = 2 }
+					}	
+		PLB = {
+					country_event = { id = polarbears.3 days = 10 }
+					}
+					
+		}
+		}
+
+country_event = { #northern festival
+	id = polarbears.2
+	immediate = {log = "[Root.GetName]: event polarbears.2"}#Auto-logging
+	title = polarbears.2.t
+	desc = polarbears.2.d
+	picture = GFX_news_event_friendship_games
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = polarbears.2.a
+	
+			}
+	}
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+﻿capital = 494
+oob = "HEL_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	tech_recon = 1
+	tech_support = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 25
+		}
+		
+		fascism = {
+			popularity = 25
+		}
+		
+		communism = {
+			popularity = 25
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 25
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = {
+	poverty2
+	lack_of_scientists2
+	feudalism
+	pre_industrial_society
+}
+
+set_stability = 0.60
+
+create_country_leader = {
+	name = "Merlock Wood"
+	desc = ""
+	picture = "RobinHood.tga"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Merlock Wood"
+	
+	picture = "RobinHood.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Merlock Wood"
+	desc = ""
+	picture = "RobinHood.tga"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Merlock Wood"
+	desc = ""
+	picture = "RobinHood.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}

@@ -1,0 +1,39 @@
+#THIS is state
+convert_living = {
+	if = {
+		limit = { has_war = no }
+		every_owned_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+			}
+			decrease_population_necromancy = yes
+		}
+	}
+	else = {
+		every_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+				OR = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+			}
+			decrease_population_necromancy = yes
+		}
+	}
+}
+
+#THIS is state
+decrease_population_necromancy = {
+	set_temp_variable = { pop_to_kill = state_population }
+	if = {
+		limit = { check_variable = { pop_to_kill < 0 } } #handle overflows - yes, this is shitty, but I have exams
+		multiply_temp_variable = { pop_to_kill = -1 }
+	}
+	multiply_temp_variable = { pop_to_kill = 0.1 } #10%
+	round_variable = pop_to_kill
+	log = "DED converts in [This.GetName], [?pop_to_kill] converted"
+	ROOT = { add_manpower = pop_to_kill }
+	multiply_temp_variable = { pop_to_kill = -1 }
+	add_manpower = pop_to_kill
+}

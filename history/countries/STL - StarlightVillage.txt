@@ -1,0 +1,127 @@
+﻿capital = 57
+
+oob = "STL_1007"
+
+set_research_slots = 2
+
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	gwtank = 1
+	infantry_weapons = 1
+	interwar_antitank = 1
+	gw_artillery = 1
+}
+
+
+set_convoys = 69
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 23
+		}
+		
+		fascism = {
+			popularity = 1
+		}
+		
+		communism = {
+			popularity = 75
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 1
+		}
+	}
+	
+	ruling_party = communism
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+add_ideas = {
+	STL_city_state
+	STL_equality_past
+}
+
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Who the hell"
+	desc = "POLITICS_DITA"
+	picture = "Dita.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { Cornered_Fox
+	}
+}
+
+create_country_leader = {
+	name = "Dope Kek"
+	
+	picture = "DitaFash.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { Cornered_Fox Dictator
+		
+	}
+}
+
+create_country_leader = {
+	name = "Feather Bangs"
+	desc = "POLITICS_FEATHERBANGS"
+	picture = "FeatherBangs.tga"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Double Diamond"
+	desc = "POLITICS_DOUBLEDIAMOND"
+	picture = "DoubleDiamond.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+create_corps_commander = {
+	name = "Grey Bread"
+	picture = "GreyBread.tga"
+	traits = { commissar_general }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Liquid Miracle"
+	picture = "Miracle.tga"
+	traits = { panzer_leader winter_specialist }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Magic Fly"
+	picture = "MagicFly.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+	female = yes
+}

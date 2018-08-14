@@ -1,0 +1,101 @@
+﻿capital = 411
+oob = "ANG_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 15
+		}
+		
+		fascism = {
+			popularity = 50
+		}
+		
+		communism = {
+			popularity = 10
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 25
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = { pre_industrial_society
+	lack_of_scientists2
+	feudalism }
+
+set_stability = 0.70
+set_cosmetic_tag = GRI_SUBJECT
+
+create_country_leader = {
+	name = "Baron Leer the Vicious"
+	desc = ""
+	picture = "LeerVicious.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Baron Leer the Vicious"
+	
+	picture = "LeerVicious.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Baron Leer the Vicious"
+	desc = ""
+	picture = "LeerVicious.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Menoetius Donner"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Bonboru"
+	portrait_path = "gfx/leaders/CHN/genereal.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}

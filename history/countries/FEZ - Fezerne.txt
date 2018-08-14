@@ -1,0 +1,89 @@
+﻿capital = 390
+oob = "FEZ_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	infantry_weapons = 1
+	transport = 1
+}
+
+set_convoys = 70
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 4
+		}
+
+		fascism = {
+			popularity = 1
+		}
+
+		communism = {
+			popularity = 10
+			#banned = no #default is no
+		}
+
+		neutrality = {
+			popularity = 85
+		}
+	}
+
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = { poverty }
+set_country_flag = have_regular_puppets
+set_stability = 0.65
+
+create_country_leader = {
+	name = "Gwenaël Godard"
+	desc = ""
+	picture = "Godard.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gwenaël Godard"
+	#	name = "Giselle Guerin"
+
+	picture = "Godard.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Gwenaël Godard"
+	#	name = "Gauvain Greenheart"
+	desc = ""
+	picture = "Godard.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Gwilherm Girault"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+
+	}
+}

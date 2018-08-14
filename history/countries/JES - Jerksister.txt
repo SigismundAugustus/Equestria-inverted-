@@ -1,0 +1,92 @@
+﻿capital = 523
+oob = "JES_1007"
+set_research_slots = 2
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	tech_recon = 1
+	tech_support = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 10
+		}
+		
+		fascism = {
+			popularity = 10
+		}
+		
+		communism = {
+			popularity = 40
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 50
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = {
+	poverty
+	feudalism
+	pre_industrial_society }
+
+set_stability = 0.45
+
+create_country_leader = {
+	name = "Countess Guiburgis Discret"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Countess Guiburgis Discret"
+	
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Countess Guiburgis Discret"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Some Guy"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}

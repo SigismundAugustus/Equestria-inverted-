@@ -1,0 +1,131 @@
+﻿add_namespace = bandit
+
+country_event = {
+	id = bandit.17
+	immediate = {log = "[Root.GetName]: event bandit.17"}#Auto-logging
+	title = bandit.17.t
+	desc = bandit.17.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.17.a
+		
+		hidden_effect = {
+			set_country_flag = BAN_blackrock_dead
+		}
+	}
+	
+	option = {
+		name = bandit.17.b
+		
+		hidden_effect = {
+			set_country_flag = BAN_blackrock_alive
+		}
+	}
+}
+
+country_event = {
+	id = bandit.18
+	immediate = {log = "[Root.GetName]: event bandit.18"}#Auto-logging
+	title = bandit.18.t
+	desc = bandit.18.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.18.a
+		BAN = {
+			country_event = {
+				id = bandit.19
+			}
+		}
+		
+	}
+	
+	option = {
+		name = bandit.18.b
+	}
+}
+
+country_event = {
+	id = bandit.19
+	immediate = {log = "[Root.GetName]: event bandit.19"}#Auto-logging
+	title = bandit.19.t
+	desc = bandit.19.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.19.a
+		hidden_effect = {
+			set_country_flag = BAN_duel_won
+		}
+	}
+	
+	option = {
+		name = bandit.19.b
+	}
+}
+
+country_event = { ## For GRW
+	id = bandit.21
+	immediate = {log = "[Root.GetName]: event bandit.21"}#Auto-logging
+	title = bandit.21.t
+	desc = bandit.21.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.21.a
+		GRW = {
+			give_guarantee = BAN
+		}
+		
+		BAN = {
+			give_guarantee = GRW
+			country_event = {
+				id = bandit.22
+			}
+		}
+	}
+	
+	option = {
+		name = bandit.21.b
+		
+		BAN = {
+			country_event = {
+				id = bandit.23
+			}
+		}
+	}
+}
+
+country_event = { ## accepted
+	id = bandit.22
+	immediate = {log = "[Root.GetName]: event bandit.22"}#Auto-logging
+	title = bandit.22.t
+	desc = bandit.22.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.22.a
+	}
+}
+
+country_event = { ## Decline
+	id = bandit.23
+	immediate = {log = "[Root.GetName]: event bandit.23"}#Auto-logging
+	title = bandit.23.t
+	desc = bandit.23.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.23.a
+	}
+}
+
+
+

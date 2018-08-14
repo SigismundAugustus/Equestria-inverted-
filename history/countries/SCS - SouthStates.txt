@@ -1,0 +1,141 @@
+﻿capital = 21
+
+set_research_slots = 2
+
+add_ideas = {
+	SCS_milita_start
+	SCS_disorganized
+	pony_race
+	modern_society
+	proper_science_base
+}
+
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	gwtank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	interwar_antitank = 1
+	gw_artillery = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	tech_support = 1
+	transport = 1
+}
+
+
+set_convoys = 20
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 20
+		}
+		
+		fascism = {
+			popularity = 30
+		}
+		
+		communism = {
+			popularity = 5
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 45
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Chairman Silverstar"
+	#picture = "Dita.dds"
+	expire = "1965.1.1"
+	picture = "Silverstar.tga"
+	ideology = moderatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Beuford"
+	expire = "1965.1.1"
+	picture = "Beuford.tga"
+	ideology = rexism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Braeburn"
+	expire = "1965.1.1"
+	ideology = liberalism
+	picture = "Braeburn.tga"
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Maud Pie"
+	expire = "1965.1.1"
+	ideology = leninism
+	picture = "MaudPie.tga"
+	traits = {
+		stout_defender
+	}
+}
+
+create_field_marshal = {
+	name = "Silverstar"
+	picture = "Silverstar.tga"
+	traits = { defensive_doctrine }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Star Spur"
+	picture = "StarSpur.tga"
+	traits = { desert_fox }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "McCree"
+	picture = "McCree.tga"
+	traits = { commando }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

@@ -1,0 +1,121 @@
+﻿capital = 16
+
+set_research_slots = 2
+
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+}
+
+
+set_convoys = 20
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 2
+		}
+		
+		fascism = {
+			popularity = 5
+		}
+		
+		communism = {
+			popularity = 13
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 80
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+add_ideas = {
+	pony_race
+	modern_society
+	proper_science_base
+	eqs_civil_war
+	disrupted_communications
+}
+
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Caballeron"
+	expire = "1965.1.1"
+	picture = "Caballeron.tga"
+	ideology = despotism
+	traits = {
+		Cornered_Fox
+	}
+}
+
+create_country_leader = {
+	name = "Furher Seaterror"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Mayor Goldwin"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Addie Hoover"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+create_corps_commander = {
+	name = "Nimbus"
+	picture = "Nimbus.tga"
+	traits = { jungle_rat }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Zambezi"
+	picture = "zigger.tga"
+	traits = { commando }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Midnight Dasher"
+	picture = "middy.tga"
+	traits = { swamp_fox }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	female = yes
+}

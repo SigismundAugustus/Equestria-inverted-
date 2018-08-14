@@ -1,0 +1,91 @@
+﻿capital = 401
+oob = "ERI_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_mountaineers = 1
+}
+
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 20
+		}
+		
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 5
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 60
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = { outdated_industry
+	lack_of_scientists3
+	poverty }
+
+set_stability = 0.50
+
+create_country_leader = {
+	name = "Duke Vincent Erie"
+	desc = ""
+	picture = "Vincet.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duke Vincent Erie"
+	
+	picture = "Vincet.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Duke Vincent Erie"
+	desc = ""
+	picture = "Vincet.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Valens Silverclaw"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}

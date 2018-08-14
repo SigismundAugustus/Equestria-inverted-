@@ -1,0 +1,32 @@
+﻿l_english:
+### countryname ###
+
+PLB_neutrality:0 "Polar Bear Communities"
+PLB_fascism:0 "White Storm"
+PLB_communism:0 "Polar Bear Socialist Republic"
+PLB_democratic:0 "Polar Star"
+PLB_neutrality_DEF:0 "The Polar Bear Communities"
+PLB_fascism_DEF:0 "White Storm"
+PLB_communism_DEF:0 "The Polar Bear Socialist Republic"
+PLB_democratic_DEF:0 "Polar Star"
+PLB_fascism_ADJ:0 "Polar Bear"
+PLB_democratic_ADJ:0 "Polar Bear"
+PLB_neutrality_ADJ:0 "Polar Bear"
+PLB_communism_ADJ:0 "Polar Bear"
+PLB_CHN_fascism:0 "Northern Protectorate"
+PLB_CHN_fascism_DEF:0 "The Northern Protectorate"
+PLB_CHN_fascism_ADJ:0 "Northern Protectorate"
+
+### names ###
+### parties ###
+########## focus localisation ######
+### events ###
+
+
+ polarbears.2.t:0 "The Great Northern Wrestling festival"
+ polarbears.2.d:0 "The time has come again for the biannual Great Northern Wrestling Festival! This time the millennia old championship will happen in the brand new arenas built by the Polar Bear leadership. This years festival is also set to last for almost a month and be especially exiting as this year Indrik and Dragon communities of Northern Equestria were allowed to participate, as their own teams no less! Truly this years festival seems to be something that everypony should see."
+ polarbears.2.a:0 "Not an event I would want to miss!"
+ 
+ ### ideas ###
+ PLB_armor_of_ancients:0 "Armor of ancients"
+ PLB_armor_of_ancients_desc:0 ""

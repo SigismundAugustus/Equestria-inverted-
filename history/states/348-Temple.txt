@@ -1,0 +1,18 @@
+state={
+	id=348
+	name="STATE_348"
+	provinces={
+		68 391 3444 3553 6241 6440 9421 11556
+	}
+	history={
+		owner = DRG
+		add_core_of = DRG
+		victory_points = {
+			3444 1
+		}
+		
+	}
+	manpower=29900
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

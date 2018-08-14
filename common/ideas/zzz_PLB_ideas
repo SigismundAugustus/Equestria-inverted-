@@ -1,0 +1,14 @@
+ideas = {
+	
+	country = {
+		PLB_bears = {
+			allowed = {always = no}
+			modifier = {
+				army_attack_factor = 0.15
+				winter_attrition_factor = -0.5
+			}
+			picture = PLB_bears
+		}
+	}
+	}
+	

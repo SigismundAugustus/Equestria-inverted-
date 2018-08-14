@@ -1,0 +1,269 @@
+﻿capital = 382
+oob = "GRI_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	tech_knights = 1
+	melee_weapons = 1
+	pre_gw_artillery = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_battlecruiser = 1
+	transport = 1
+}
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 15
+		}
+		
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 5
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 65
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+add_opinion_modifier = { target = JER modifier = sworn_enemies }
+add_opinion_modifier = { target = WNG modifier = sworn_enemies }
+add_opinion_modifier = { target = FAT modifier = sworn_enemies }
+
+add_ideas = { 
+	outdated_industry
+	GRI_bureaucracy
+	GRI_land_thougth
+	lack_of_scientists
+	CHN_GRI_Attache_For_GRI
+}
+add_manpower = 30000
+set_major = yes
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = YAL
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = ANG
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = KAT
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = ROU
+		autonomous_state = autonomy_autonomous_vassal
+	}
+	set_autonomy = {
+		target = BRZ
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = STW
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = FEA
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = PYT
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = MNC
+		autonomous_state = autonomy_nominal_vassal
+	}
+	else = {
+		puppet = YAL
+		puppet = ANG
+		puppet = KAT
+		puppet = ROU
+		puppet = BRZ
+		puppet = STW
+		puppet = FEA
+		puppet = PYT
+		puppet = MNC
+	}
+}
+
+
+set_stability = 0.70
+
+create_country_leader = {
+	name = "Emperor Grover V"
+	desc = ""
+	picture = "Grover.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Archon Eros VII"
+	
+	picture = "Fash_pope.tga"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Edwin van Cleef"
+	desc = ""
+	#picture = "Gabriela.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Gisa Eagels"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Elias Bronzetail"
+	portrait_path = "gfx/leaders/GRI/Elias.tga"
+	traits = { old_guard thorough_planner defensive_doctrine }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Erich Helltalon"
+	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_9.dds"
+	traits = { offensive_doctrine }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "August Duskwing"
+	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_13.dds"
+	traits = { fortress_buster bearer_of_artillery }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Anicetus Mudbeak"
+	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_8.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Reinhold Thundertail"
+	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_7.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Cecilia Marshtail"
+	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_6.dds"
+	traits = { commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	female = yes
+}
+
+create_corps_commander = {
+	name = "Thranx"
+	portrait_path = "gfx/leaders/GRI/Thranx.tga"
+	traits = { infiltrator winter_specialist }
+	id = 622
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Synovial"
+	picture = "Synovial.tga"
+	traits = { old_guard infiltrator organizer }
+	skill = 3
+	id = 621
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+random_army_leader = {
+	limit = { has_id = 621 }
+	save_global_event_target_as = CHN_Synovial
+}
+
+random_army_leader = {
+	limit = { has_id = 622 }
+	save_global_event_target_as = CHN_Thranx
+}
+
+save_global_event_target_as = griffonian_empire

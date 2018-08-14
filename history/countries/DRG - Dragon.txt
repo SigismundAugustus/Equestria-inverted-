@@ -1,0 +1,92 @@
+﻿capital = 7
+
+oob = "DRG_1007"
+
+set_research_slots = 2
+
+set_technology = {
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+}
+
+
+set_convoys = 11
+set_politics = {
+	
+	parties = {
+		
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 100
+		}
+		democratic = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+add_ideas = {
+	Dragons
+	tribal_society
+}
+
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Queen Ember"
+	expire = "1965.1.1"
+	picture = "Amber.tga"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Queen Ember"
+	expire = "1965.1.1"
+	picture = "Amber.tga"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Queen Ember"
+	expire = "1965.1.1"
+	picture = "Amber.tga"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Lord Ruby"
+	expire = "1965.1.1"
+	picture = "rubydragon.tga"
+	ideology = anarchist_communism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Lord Torch"
+	picture = "torch.tga"
+	traits = { old_guard offensive_doctrine }
+	skill = 1
+}

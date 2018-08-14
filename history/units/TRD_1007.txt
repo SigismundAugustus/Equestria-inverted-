@@ -1,0 +1,213 @@
+﻿division_template = {
+	name = "Skyfall Company"			#Infantry Group - kek
+	division_names_group = TRD_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Griffon Armoured Group"
+	division_names_group = TRD_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Knights of Skyfall"			#Infantry Division -
+	division_names_group = TRD_GRD_01
+	regiments = {
+		knights = { x = 0 y = 0 }
+		knights = { x = 1 y = 0 }
+		knights = { x = 0 y = 1 }
+		knights = { x = 1 y = 1 }
+		knights = { x = 0 y = 2 }
+		knights = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Naval Infantry"			#Infantry Division -
+	division_names_group = TRD_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Protection Company"
+	division_names_group = TRD_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+	priority = 0
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12882
+		division_template = "Griffon Armoured Group"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.30
+		force_equipment_variants = { gw_tank_equipment = { owner = "TRD" creator = "EQS" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1963
+		division_template = "Skyfall Company"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.00
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 10564
+		division_template = "Skyfall Company"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.00
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9142
+		division_template = "Skyfall Company"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.00
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12739
+		division_template = "Naval Infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.00
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12882
+		division_template = "Knights of Skyfall"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0 }
+
+	navy = {
+		name = "Skyfall Federal Fleet"
+		base = 12882
+		location = 12882 # Skyfall
+		ship = { name = "STS The Constant Warwick" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Grover III" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Eling" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Golden Falcon" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS The Resolute" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Odin" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Acertif" definition = battle_cruiser equipment = {  battle_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Pilot" definition = battle_cruiser equipment = {  battle_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Vanquisher" definition = battle_cruiser equipment = {  battle_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Philoctetes" definition = battle_cruiser equipment = {  battle_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Loyal Explorer" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Milne" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Candytuft" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Caroles" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Nox" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Alcaston" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Aquilian Prince" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Desiree" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Disdainr" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Petard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Caroline" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Ehkoli" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Heron" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Erebus" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+		ship = { name = "STS Trickery" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRD } } }
+	}
+}
+
+air_wings = {
+	380 = {
+		fighter_equipment_0 = {
+			owner = "TRD"
+			amount = 40
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "TRD"
+			amount = 20
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TRD"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "TRD"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "TRD"
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 50
+	}
+}

@@ -1,0 +1,94 @@
+﻿capital = 486
+oob = "STW_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 30
+		}
+		
+		fascism = {
+			popularity = 10
+		}
+		
+		communism = {
+			popularity = 10
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 50
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = { outdated_industry
+	lack_of_scientists1
+}
+
+set_cosmetic_tag = GRI_SUBJECT
+
+set_stability = 0.70
+
+create_country_leader = {
+	name = "Duchess Gabriela Eagleclaw"
+	desc = ""
+	picture = "Gabriela.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duchess Gabriela Eagleclaw"
+	
+	picture = "Gabriela.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Duchess Gabriela Eagleclaw"
+	desc = ""
+	picture = "Gabriela.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Vitalius Moonbill"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}

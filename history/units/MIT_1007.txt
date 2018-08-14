@@ -1,0 +1,66 @@
+﻿division_template = {
+	name = "Minotaur Infantry Division"			#Infantry Division - kek
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Minotaur Garrison Division"			#Infantry Division - kek
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	
+	support = {
+	}
+}
+division_template = {
+	name = "Minotaur Mountaineer Division"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "Minotaur Infantry Division"
+		location = 8050
+		division_template = "Minotaur Infantry Division"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Minotaur Infantry Division"
+		location = 12703
+		division_template = "Minotaur Infantry Division"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Minotaur Infantry Division"
+		location = 2047
+		division_template = "Minotaur Infantry Division"
+		start_experience_factor = 0.3 }
+	
+	division = {
+		name = "Minotaur Infantry Division"
+		location = 10934
+		division_template = "Minotaur Infantry Division"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Minotaur Garrison Division"
+		location = 8047
+		division_template = "Minotaur Garrison Division"
+		start_experience_factor = 0.1 }
+}

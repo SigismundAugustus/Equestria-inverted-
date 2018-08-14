@@ -1,0 +1,88 @@
+﻿#Equestria At War for Hearts of Iron IV
+
+#LEAD DEVELOPERS
+Scroup
+Cyrus
+Featherus
+Psody
+Yard1
+
+#CONTRIBUTORS
+Algol
+Arcy
+Axidant
+Batpony Monarch
+Bipen
+BunnyShrubby
+Cherrypone
+Cody MacArthur
+Computational Pragmatist
+Echo
+Flake
+Flying Dutchpony
+DasPanzer
+dingosupastar
+gdvp111
+Gara-The-Author
+Gearheart
+GreatPretender
+Hellstorm12
+Hysterical Fox
+Илларион
+Indyclone77
+Kaltrop
+King_Wilson
+Kuche
+Lovenought
+Lumi
+Mageytash
+Miltonian
+Murp
+Myxine
+Nico von Hapsburg
+NuclearBlizzard
+Orion
+Orwell
+Pipsqueak
+Printik
+Redheart
+Rich May
+Shade
+Shalax
+Sinister
+Sparkplug
+StDeadRa
+Stemis
+ThatZealousOne
+TheFuego
+TheGreatPretender
+Thomman
+Thor
+Udy
+Valmoric
+Wells
+
+#TRANSLATORS
+Big Bruddah
+Cwop
+Damiyan
+Gereval
+Mr. PumzA
+Murena
+Vasily
+Vizor
+Scrog
+
+#SPECIAL THANKS TO:
+Lauren Faust
+Hasbro
+DHX Media
+Paradox Interactive
+Paradox Development Studio
+Greatexperiment
+Eight Years' War of Resistance
+Kaiserreich Team
+ThePinkPanzer
+HoI 4 Modding Coop
+All artists & creators whose work has been used
+Our wonderful community

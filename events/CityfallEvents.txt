@@ -1,0 +1,333 @@
+﻿add_namespace = cityfall
+# The Fall of Vaverfront (Changelings)
+news_event = {
+	id = cityfall.1
+	immediate = {log = "[Root.GetName]: event cityfall.1"}#Auto-logging
+	title = cityfall.1.t
+	desc = cityfall.1.d
+	picture = GFX_news_event_vanhoover_surrenders
+	
+	major = yes
+	
+	trigger = {
+		69 = { is_controlled_by = CHN }
+		69 = { is_owned_by = OLE }
+		OLE = { has_war_with = CHN }
+		NOT = { has_global_flag = fall_of_vaverfront_CHN }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_vaverfront_CHN
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = cityfall.1.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = OLE
+			}
+		}
+	}
+	option = {
+		name = cityfall.1.b
+		trigger = { TAG = CHN }
+	}
+	option = {
+		name = cityfall.1.c
+		trigger = { TAG = OLE }
+	}
+}
+# The Fall of Hjortland (Changelings)
+news_event = {
+	id = cityfall.2
+	immediate = {log = "[Root.GetName]: event cityfall.2"}#Auto-logging
+	title = cityfall.2.t
+	desc = cityfall.2.d
+	picture = GFX_news_event_vanhoover_surrenders
+	
+	major = yes
+	
+	trigger = {
+		76 = { is_controlled_by = CHN }
+		76 = { is_owned_by = OLE }
+		OLE = { has_war_with = CHN }
+		NOT = { has_global_flag = fall_of_hjortland_CHN }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_hjortland_CHN
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = cityfall.2.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = OLE
+			}
+		}
+	}
+	option = {
+		name = cityfall.2.b
+		trigger = { TAG = CHN }
+	}
+	option = {
+		name = cityfall.2.c
+		trigger = { TAG = OLE }
+	}
+}
+# The Fall of Cervus (Changelings)
+news_event = {
+	id = cityfall.3
+	immediate = {log = "[Root.GetName]: event cityfall.3"}#Auto-logging
+	title = cityfall.3.t
+	desc = cityfall.3.d
+	picture = GFX_news_event_vanhoover_surrenders
+	
+	major = yes
+	
+	trigger = {
+		191 = { is_controlled_by = CHN }
+		191 = { is_owned_by = OLE }
+		OLE = { has_war_with = CHN }
+		NOT = { has_global_flag = fall_of_cervus_CHN }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_cervus_CHN
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = cityfall.3.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = OLE
+			}
+		}
+	}
+	option = {
+		name = cityfall.3.b
+		trigger = { TAG = CHN }
+	}
+	option = {
+		name = cityfall.3.c
+		trigger = { TAG = OLE }
+	}
+}
+# The Fall of Sakara (Changelings)
+news_event = {
+	id = cityfall.4
+	immediate = {log = "[Root.GetName]: event cityfall.4"}#Auto-logging
+	title = cityfall.4.t
+	desc = cityfall.4.d
+	picture = GFX_news_event_vanhoover_surrenders
+	
+	major = yes
+	
+	trigger = {
+		194 = { is_controlled_by = CHN }
+		194 = { is_owned_by = OLE }
+		OLE = { has_war_with = CHN }
+		NOT = { has_global_flag = fall_of_sakara_CHN }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_sakara_CHN
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = cityfall.4.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = OLE
+			}
+		}
+	}
+	option = {
+		name = cityfall.4.b
+		trigger = { TAG = CHN }
+	}
+	option = {
+		name = cityfall.4.c
+		trigger = { TAG = OLE }
+	}
+}
+# The Fall of River City
+news_event = {
+	id = cityfall.5
+	immediate = {log = "[Root.GetName]: event cityfall.5"}#Auto-logging
+	title = cityfall.5.t
+	desc = cityfall.5.d
+	picture = GFX_news_fall_of_river_city
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_global_flag = fall_of_river_city }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_river_city
+		619 = { set_state_flag = state_has_fallen }
+		FROM.FROM = { save_event_target_as = old_controller }
+		ROOT = { save_event_target_as = new_controller }
+	}
+	
+	option = { #One city does not make a Federation!
+		name = cityfall.5.a
+		trigger = {
+			tag = event_target:old_controller
+		}
+	}
+
+	option = { #The Federation Shall Fall.
+		name = cityfall.5.b
+		trigger = {
+			tag = event_target:new_controller
+		}
+	}
+
+	option = { #The sun begins to set on the eastern ponies.
+		name = cityfall.5.c
+		trigger = {
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+}
+# The Fall of Sunset
+news_event = {
+	id = cityfall.6
+	immediate = {log = "[Root.GetName]: event cityfall.6"}#Auto-logging
+	title = cityfall.6.t
+	desc = {
+		text = cityfall.6.d.maresoc_take
+		trigger = { event_target:new_controller = { has_country_flag = is_maresoc } }
+	}
+	desc = {
+		text = cityfall.6.d.maresoc_loose
+		trigger = { event_target:old_controller = { has_country_flag = is_maresoc } }
+	}
+	desc = {
+		text = cityfall.6.d.other
+		trigger = { 
+			event_target:new_controller = { NOT = { has_country_flag = is_maresoc } }
+			event_target:old_controller = { NOT = { has_country_flag = is_maresoc } }
+		}
+	}
+	picture = GFX_news_sunset_city
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_global_flag = fall_of_sunset_city }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_sunset_city
+		619 = { set_state_flag = state_has_fallen }
+		FROM.FROM = { save_event_target_as = old_controller }
+		ROOT = { save_event_target_as = new_controller }
+	}
+	
+	option = { #The madness of MARESOC cannot be allowed to win!
+		name = cityfall.6.a.maresoc_take
+		trigger = {
+			tag = event_target:old_controller
+			event_target:new_controller = { has_country_flag = is_maresoc }
+		}
+	}
+	option = { #They can have the ashes.
+		name = cityfall.6.a.maresoc_loose
+		trigger = {
+			tag = event_target:old_controller
+			event_target:old_controller = { has_country_flag = is_maresoc }
+		}
+	}
+	option = { #Give it time and the sun will rise over Sunset once again.
+		name = cityfall.6.a
+		trigger = {
+			tag = event_target:old_controller
+			event_target:new_controller = { NOT = { has_country_flag = is_maresoc } }
+			event_target:old_controller = { NOT = { has_country_flag = is_maresoc } }
+		}
+	}
+
+	option = { #This is a great victory for the party.
+		name = cityfall.6.b.maresoc_take
+		trigger = {
+			tag = event_target:new_controller
+			event_target:new_controller = { has_country_flag = is_maresoc }
+		}
+	}
+	option = { #The corruption of MARESOC is washing away.
+		name = cityfall.6.b.maresoc_loose
+		trigger = {
+			tag = event_target:new_controller
+			event_target:old_controller = { has_country_flag = is_maresoc }
+		}
+	}
+	option = { #Time to have a barby on the beach.
+		name = cityfall.6.b
+		trigger = {
+			tag = event_target:new_controller
+			event_target:new_controller = { NOT = { has_country_flag = is_maresoc } }
+			event_target:old_controller = { NOT = { has_country_flag = is_maresoc } }
+		}
+	}	
+
+	option = { #And thus darkness falls over New Mareland.
+		name = cityfall.6.c.maresoc_take
+		trigger = {
+			event_target:new_controller = { has_country_flag = is_maresoc }
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+	option = { #The sun rises over Sunset once again.
+		name = cityfall.6.c.maresoc_loose
+		trigger = {
+			event_target:old_controller = { has_country_flag = is_maresoc }
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+	option = { #With the end of Sunset, darkness has fallen over New Mareland.
+		name = cityfall.6.c
+		trigger = {
+			event_target:new_controller = { NOT = { has_country_flag = is_maresoc } }
+			event_target:old_controller = { NOT = { has_country_flag = is_maresoc } }
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+}

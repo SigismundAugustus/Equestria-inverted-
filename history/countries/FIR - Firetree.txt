@@ -1,0 +1,84 @@
+﻿capital = 454
+oob = "FIR_1007"
+set_research_slots = 1
+
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+}
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 70
+		}
+		
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 21
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 9
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_ideas = { agrarian_society
+	disarmed_nation
+	lack_of_scientists }
+
+set_stability = 0.70
+
+create_country_leader = {
+	name = "Herman Goering"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Herman Goering"
+	
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Iorweth the Spirit Speaker"
+	desc = ""
+	picture = "IORWERTH.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Spirit of the Trees"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = primitive_communism
+	traits = {
+		
+	}
+}

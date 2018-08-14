@@ -1,0 +1,151 @@
+﻿division_template = {
+	name = "Griffon Infantry Division"			#Infantry Division - kek
+	division_names_group = JER_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Knights of the Realm"			#Infantry Division -
+	division_names_group = JER_CAV_01
+	regiments = {
+		knights = { x = 0 y = 0 }
+		knights = { x = 1 y = 0 }
+		knights = { x = 0 y = 1 }
+		knights = { x = 1 y = 1 }
+		knights = { x = 0 y = 2 }
+		knights = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Garrison Division"
+	division_names_group = JER_GAR_01
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Mountaineer Division"
+	division_names_group = JER_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 3164
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 6091
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 2058
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 11213
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 12106
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 5050
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 6190
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6 }
+	division = {
+		name = "Knights of the Order of the Knights Encarmine"
+		location = 3164
+		division_template = "Knights of the Realm"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0 }
+	navy = {
+		name = "Marine Nationale"
+		base = 3164
+		location = 3164 # Aquilea
+		ship = { name = "HMS Crown Prize" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = JER } } }
+		ship = { name = "HMS Pridea" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = JER } } }
+		ship = { name = "HMS Beauvais" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JER } } }
+		ship = { name = "HMS Morin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JER } } }
+		ship = { name = "HMS Baillairgé" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JER } } }
+		ship = { name = "HMS Cheriton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JER } } }	
+	}
+}
+
+air_wings = {
+	473 = {
+		fighter_equipment_0 = {
+			owner = "JER"
+			amount = 40
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "JER"
+			amount = 20
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "JER"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "JER"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+}

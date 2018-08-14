@@ -1,0 +1,128 @@
+﻿capital = 347
+
+oob = "JAK_1007"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_mountaineers = 1
+}
+
+
+set_convoys = 70
+set_politics = {
+	
+	parties = {
+		democratic = {
+			popularity = 10
+		}
+		
+		fascism = {
+			popularity = 6
+		}
+		
+		communism = {
+			popularity = 4
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 80
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+add_ideas = {
+	agrarian_society
+	YAK_resilience
+}
+
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Prince Bradford"
+	desc = "POLITICS_PRINCEBRADFORD_DESC"
+	picture = "Bradford.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Khan Kek"
+	desc = ""
+	picture = "Bradford.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = { dictator
+		
+	}
+}
+
+create_country_leader = {
+	name = "Very Nice Yak"
+	desc = ""
+	picture = "Bradford.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Yak"
+	desc = ""
+	picture = "Bradford.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Prince Bradford"
+	desc = "The prince of the Jakistani lands is also a trained officer with knowledge on how to lead his people into battle."
+	portrait_path = "gfx/leaders/JAK/Bradford.tga"
+	traits = { offensive_doctrine }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Garrin Korai"
+	portrait_path = "gfx/leaders/JAK/yakovich.tga"
+	traits = { ambusher }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3	
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Maihov Kerz"
+	portrait_path = "gfx/leaders/JAK/maihov.tga"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}

@@ -1,0 +1,121 @@
+﻿
+division_template = {
+	name = "Griffon Infantry Division"			#Infantry Division - kek
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	
+	support = {
+	}
+}
+division_template = {
+	name = "Royal Knights"			#Infantry Division -
+	
+	regiments = {
+		knights = { x = 0 y = 0 }
+		knights = { x = 1 y = 0 }
+		knights = { x = 0 y = 1 }
+		knights = { x = 1 y = 1 }
+		knights = { x = 0 y = 2 }
+		knights = { x = 1 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Mountaineer Division"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Garrison Division"
+
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 7572
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.2 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 7549
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.70 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 12407
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6 }
+	division = {
+		name = "Royal Knights"
+		location = 10377
+		division_template = "Royal Knights"
+		start_experience_factor = 2.0
+		start_equipment_factor = 0.5}
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 12378
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 7633
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.2 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 12288
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.34 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 10616
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.83 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 10616
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.33 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 10616
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 10616
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1 }
+	
+}
