@@ -9,7 +9,6 @@ state={
 	history = {
 		owner = HLR
 		add_core_of = HLR
-		add_core_of = NTR
 		victory_points = { 1307 25 }
 		buildings = {
 			infrastructure = 2

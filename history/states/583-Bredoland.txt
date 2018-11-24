@@ -10,8 +10,8 @@ state={
 	}
 	state_category = wasteland
 	history = {
-		owner = FAT
-		add_core_of = FAT
+		owner = VED
+		add_core_of = VED
 	}
 	manpower=56077
 	buildings_max_level_factor=1.000

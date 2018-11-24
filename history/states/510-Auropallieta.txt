@@ -7,9 +7,9 @@ state={
 	}
 	state_category = city
 	history = {
-		owner = CYA
+		owner = WNG
 		add_core_of = CYA
-		add_claim_by = MIT
+		add_core_of = WNG
 		victory_points = { 7342 25 }
 		buildings = {
 			infrastructure = 5

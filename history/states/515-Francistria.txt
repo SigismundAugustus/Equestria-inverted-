@@ -6,7 +6,8 @@ state={
 	}
 	state_category = large_town
 	history = {
-		owner = FRN
+		owner = ARA
+		add_core_of = ARA
 		add_core_of = FRN
 		victory_points = { 7106 25 }
 		buildings = {

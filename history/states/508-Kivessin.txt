@@ -9,8 +9,8 @@ state={
 	}
 	state_category = large_city
 	history = {
-		owner = BRF
-		add_core_of = BRF
+		owner = BOI
+		add_core_of = BOI
 		add_core_of = GRW
 		victory_points = { 10377 35 }
 		buildings = {

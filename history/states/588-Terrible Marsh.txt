@@ -10,8 +10,8 @@ state={
 		1474 1893 4041 4141 4896 7665 9939 10006 10304 10335 10822 12414
 	}
 	history = {
-		owner = GRW
-		add_core_of = GRW
+		owner = BOI
+		add_core_of = BOI
 		add_core_of = BRF
 	}
 	manpower=76788

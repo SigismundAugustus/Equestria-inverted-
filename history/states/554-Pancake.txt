@@ -12,6 +12,7 @@ state={
 		add_core_of = KAT
 		buildings = {
 			infrastructure = 1
+			air_base = 1
 		}
 	}
 	manpower=467905
