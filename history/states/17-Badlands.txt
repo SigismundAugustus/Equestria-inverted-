@@ -9,14 +9,20 @@ state={
 	history={
 		owner = DRG
 		add_core_of = DRG
-		add_core_of = EQS
-		
+		buildings = {
+			arms_factory = 3
+			industrial_complex = 3
+			infrastructure = 5
+		}
+		victory_points = {
+			9309 50
+		}
 	}
 	
 	provinces={
 		4476 6698 7590 7622 9309 9403 10374 11346 11360 12347
 	}
-	manpower=130
+	manpower=3145640
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=large_city
 }

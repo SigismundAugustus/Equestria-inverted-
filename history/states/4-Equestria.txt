@@ -8,7 +8,6 @@ state={
 		add_core_of = DRG
 		buildings = {
 			infrastructure = 3
-			air_base = 4
 			dockyard = 1
 			11755 = {
 				naval_base = 5
@@ -24,7 +23,7 @@ state={
 	provinces={
 		902 3838 4913 6891 9851 9863 10917 11673 11755 11773 11804 11824
 	}
-	manpower=46359
+	manpower=1246359
 	buildings_max_level_factor=1.000
 	state_category=small_island
 }

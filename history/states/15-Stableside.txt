@@ -1,7 +1,7 @@
 state={
 	id=15
 	name="STATE_15"
-	state_category = town
+	state_category = rural
 	resources = {
 		steel = 1
 	}
@@ -9,18 +9,15 @@ state={
 		owner = DRG
 		add_core_of = DRG
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 1
-			arms_factory = 1
-			673 = { naval_base = 1 }
+			infrastructure = 2
+			
 		}
 		
-		victory_points = { 586 10 }
 	}
 	
 	provinces={
 		538 586 673 3500 6501 6680 9441 9666 11404 11417 11620 11634
 	}
-	manpower=1311700
+	manpower=13117
 	buildings_max_level_factor=1.000
 }

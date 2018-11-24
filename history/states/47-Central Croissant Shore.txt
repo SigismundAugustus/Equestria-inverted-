@@ -11,8 +11,7 @@ state={
 		owner = BUF
 		add_core_of = BUF
 		buildings = {
-			11754 = { naval_base = 1 }
-			infrastructure = 5
+			infrastructure = 1
 		}
 		victory_points = {
 			11754 1
@@ -22,6 +21,6 @@ state={
 	provinces={
 		730 935 949 965 3908 3937 3952 3971 6658 6953 6982 9537 9821 9890 9906 11754 11832 11857 11868
 	}
-	manpower=1504064
+	manpower=154064
 	buildings_max_level_factor=1.000
 }
