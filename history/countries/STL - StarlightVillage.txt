@@ -1,18 +1,30 @@
-﻿capital = 57
+﻿capital = 307
 
 oob = "STL_1007"
 
-set_research_slots = 2
+set_research_slots = 3
 
 set_technology = {
-	pony_race = 1
+	deer_race = 1
 	melee_weapons = 1
 	melee_weapons1 = 1
 	pre_gw_artillery = 1
-	gwtank = 1
 	infantry_weapons = 1
 	interwar_antitank = 1
+	motorised_infantry
 	gw_artillery = 1
+	tech_support = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	transport = 1
 }
 
 
@@ -21,24 +33,24 @@ set_politics = {
 	
 	parties = {
 		democratic = {
-			popularity = 23
+			popularity = 50
 		}
 		
 		fascism = {
-			popularity = 1
+			popularity = 20
 		}
 		
 		communism = {
-			popularity = 75
+			popularity = 20
 			#banned = no #default is no
 		}
 		
 		neutrality = {
-			popularity = 1
+			popularity = 10
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "1000.10.10"
 	election_frequency = 36
 	elections_allowed = no
@@ -46,14 +58,15 @@ set_politics = {
 
 
 add_ideas = {
-	STL_city_state
-	STL_equality_past
+STL_ties_with_olenia
+STL_ties_with_the_changelings
 }
 
 set_stability = 0.5
+set_war_support = 0.5
 
 create_country_leader = {
-	name = "Who the hell"
+	name = ""
 	desc = "POLITICS_DITA"
 	picture = "Dita.dds"
 	expire = "1965.1.1"
@@ -63,7 +76,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Dope Kek"
+	name = "Thorax"
 	
 	picture = "DitaFash.dds"
 	expire = "1965.1.1"
@@ -74,13 +87,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Feather Bangs"
-	desc = "POLITICS_FEATHERBANGS"
-	picture = "FeatherBangs.tga"
+	name = "Duke Johan The Beloved"
+	desc = "POLITICS_KINGJOHAN_DESC"
+	picture = "DeerKing.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberalism
 	traits = {
-		
 	}
 }
 

@@ -4,7 +4,6 @@ oob = "STG_1007"
 
 set_research_slots = 3
 
-give_guarantee = STL
 
 set_technology = {
 	pony_race = 1
@@ -45,11 +44,11 @@ set_politics = {
 		}
 		
 		fascism = {
-			popularity = 3
+			popularity = 91
 		}
 		
 		communism = {
-			popularity = 91
+			popularity = 3
 		}
 		
 		neutrality = {
@@ -57,23 +56,16 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = fascism
 	last_election = "1003.5.3"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 
 add_ideas = {
-	severe_famine
-	incomplete_industrialization
 }
-add_tech_bonus = {
-	name = light_tank_bonus
-	bonus = 0.15
-	uses = 1
-	technology = basic_light_tank
-}
+
 set_stability = 0.6
 set_war_support = 0.6
 add_manpower = 5000
@@ -106,7 +98,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nikto"
+	name = "Propher Steel Stallion"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
