@@ -7,7 +7,6 @@ state={
 		owner = EQS
 		add_core_of = EQS
 		buildings = {
-			air_base = 1
 			infrastructure = 1
 		}
 	}

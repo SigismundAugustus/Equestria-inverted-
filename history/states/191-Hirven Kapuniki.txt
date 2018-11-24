@@ -8,8 +8,8 @@ state={
 		add_core_of = OLE
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 3
-			arms_factory = 2
+			industrial_complex = 2
+			arms_factory = 1
 			6846 = {
 				naval_base = 3
 				
