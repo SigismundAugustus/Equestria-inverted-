@@ -7,9 +7,6 @@ state={
 	history={
 		owner = DRG
 		add_core_of = DRG
-		victory_points = {
-			3444 1
-		}
 		
 	}
 	manpower=29900

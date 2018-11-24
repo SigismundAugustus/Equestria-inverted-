@@ -4,12 +4,11 @@ state={
 	provinces={
 		120 6081 6212 9166 10029 11024 11041 11121 11132 13118
 	}
-	manpower=853529
+	manpower=653529
 	history={
-		owner = CHN
-		add_core_of = CHN
+		owner = STL
+		add_core_of = STL
 		buildings = {
-			air_base = 1
 			arms_factory = 1
 			industrial_complex = 1
 		}

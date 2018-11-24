@@ -8,7 +8,6 @@ state={
 	history = {
 		owner = DRG
 		add_core_of = DRG
-		add_core_of = FEZ
 		victory_points = { 4868 20 }
 		victory_points = { 1792 5 }
 		buildings = {
@@ -18,6 +17,6 @@ state={
 			4868 = { naval_base = 2 }
 		}
 	}
-	manpower=1435600
+	manpower=2835600
 	buildings_max_level_factor=1.000
 }

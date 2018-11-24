@@ -9,9 +9,7 @@ state={
 		add_core_of = DRG
 		buildings = {
 			infrastructure = 2
-			668 = { naval_base = 1 }
 		}
-		victory_points = { 668 5 }
 	}
 	manpower=257400
 	state_category = town

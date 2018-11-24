@@ -13,11 +13,10 @@ state={
 			infrastructure = 6
 			industrial_complex = 3
 			arms_factory = 2
-			air_base = 1
 			dockyard = 2
 			2156 = { naval_base = 2 }
 		}
 	}
-	manpower=2456077
+	manpower=2056077
 	buildings_max_level_factor=1.000
 }
