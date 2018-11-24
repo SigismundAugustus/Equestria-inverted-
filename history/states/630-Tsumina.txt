@@ -11,8 +11,8 @@ state={
 		2080 2192 5117 7619 8193 10171 10511 10948 12775 12896 12945
 	}
 	history = {
-		owner = GRU
-		add_core_of = GRU
+		owner = RIV
+		add_core_of = RIV
 	}
 	manpower=78909
 	buildings_max_level_factor=1.000

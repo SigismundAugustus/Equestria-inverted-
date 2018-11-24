@@ -10,6 +10,6 @@ state={
 		add_core_of = DRG
 		victory_points = { 10395 2 }
 	}
-	manpower=44567
+	manpower=244567
 	buildings_max_level_factor=1.000
 }

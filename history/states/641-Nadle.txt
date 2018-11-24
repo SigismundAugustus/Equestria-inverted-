@@ -8,7 +8,6 @@ state={
 	history = {
 		owner = HLR
 		add_core_of = HLR
-		add_core_of = WAT
 		buildings = {
 			infrastructure = 1
 		}

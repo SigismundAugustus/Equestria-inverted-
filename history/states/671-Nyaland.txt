@@ -12,6 +12,6 @@ state={
 			12388 = { naval_base = 1 }
 		}
 	}
-	manpower=34567
+	manpower=28567
 	buildings_max_level_factor=1.000
 }

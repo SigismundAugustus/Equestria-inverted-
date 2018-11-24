@@ -5,7 +5,8 @@ state={
 		2032 4990 5019 7597 7975 10843 12718 12781 12844
 	}
 	history={
-		owner = ERI
+		owner = GRI
+		add_core_of = GRI
 		add_core_of = AVI
 		buildings = {
 			
