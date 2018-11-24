@@ -6,8 +6,8 @@ state={
 	}
 	manpower=675415
 	history={
-		owner = CHN
-		add_core_of = CHN
+		owner = STL
+		add_core_of = STL
 	}
 	
 	state_category = rural

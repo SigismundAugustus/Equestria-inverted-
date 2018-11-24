@@ -4,8 +4,8 @@ state={
 	name="STATE_296"
 	
 	history={
-		owner = OLE
-		add_core_of = OLE
+		owner = STL
+		add_core_of = STL
 		buildings = {
 			infrastructure = 1
 			
@@ -16,7 +16,7 @@ state={
 	provinces={
 		706 822 882 3824 3847 3894 13265 13266 13267
 	}
-	manpower=22100
+	manpower=221005
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

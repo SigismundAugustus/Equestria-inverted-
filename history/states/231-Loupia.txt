@@ -8,6 +8,7 @@ state={
 		add_core_of = EQS
 		buildings = {
 			infrastructure = 2
+			air_base = 2
 			3920 = {
 				naval_base = 2
 				

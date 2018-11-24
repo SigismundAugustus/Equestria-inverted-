@@ -7,7 +7,7 @@ state={
 	resources={
 		crystals = 7
 	}
-	manpower=11700
+	manpower=117400
 	history={
 		owner = OLE
 		add_core_of = OLE
