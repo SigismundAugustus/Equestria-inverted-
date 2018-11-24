@@ -9,8 +9,8 @@ state={
 		4351 7438 9528
 	}
 	history = {
-		owner = DED
-		add_core_of = DED
+		owner = HLR
+		add_core_of = HLR
 		
 		buildings = {
 			infrastructure = 2

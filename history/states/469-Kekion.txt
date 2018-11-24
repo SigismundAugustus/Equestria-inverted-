@@ -6,12 +6,12 @@ state={
 		2222 5226 10201 10325
 	}
 	history = {
-		owner = MIT
-		add_core_of = MIT
+		owner = DRG
+		add_core_of = DRG
 		buildings = {
 			10325 = { naval_base = 1 }
 		}
 	}
-	manpower=124505
+	manpower=224505
 	buildings_max_level_factor=1.000
 }

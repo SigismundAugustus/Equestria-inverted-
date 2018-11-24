@@ -12,9 +12,8 @@ state={
 	}
 	history = {
 		victory_points = { 3706 1 }
-		add_core_of = MNC
-		add_core_of = GRI
-		owner = GRI
+		add_core_of = HLR
+		owner = HLR
 	}
 	manpower=145607
 	buildings_max_level_factor=1.000

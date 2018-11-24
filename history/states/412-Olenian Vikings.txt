@@ -6,8 +6,8 @@ state={
 	}
 	state_category = large_town
 	history = {
-		owner = OLV
-		add_core_of = OLV
+		owner = RIV
+		add_core_of = RIV
 		victory_points = { 10900 4 }
 		buildings = {
 			infrastructure = 4

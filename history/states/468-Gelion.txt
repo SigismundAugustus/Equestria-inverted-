@@ -6,8 +6,8 @@ state={
 		4338 5051 7358 8047 8075 8252 10212 12186 12243 1225
 	}
 	history = {
-		owner = MIT
-		add_core_of = MIT
+		owner = DRG
+		add_core_of = DRG
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -17,6 +17,6 @@ state={
 			8047 5
 		}
 	}
-	manpower=307668
+	manpower=507668
 	buildings_max_level_factor=1.000
 }

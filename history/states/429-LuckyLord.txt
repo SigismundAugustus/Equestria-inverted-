@@ -5,9 +5,8 @@ state={
 		1130 1934 2358 7073 7144 7148 7216 8041 9992 10120 10127 10869 11195 11974 12044 12091 12764 12816
 	}
 	history = {
-		owner = FAT
+		owner = VED
 		add_core_of = VED
-		add_core_of = FAT
 		victory_points = { 7148 25 }
 		buildings = {
 			infrastructure = 4

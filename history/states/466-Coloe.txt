@@ -12,6 +12,6 @@ state={
 		owner = MIT
 		add_core_of = MIT
 	}
-	manpower=156700
+	manpower=116700
 	buildings_max_level_factor=1.000
 }

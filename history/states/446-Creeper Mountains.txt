@@ -12,9 +12,9 @@ state={
 		tungsten=6.000
 	}
 	history={
-		owner = CYA
+		owner = BOI
 		add_core_of = CYA
-		add_claim_by = MIT
+		add_core_of = BOI
 		victory_points = { 12433 1 }
 	}
 	manpower=56709
