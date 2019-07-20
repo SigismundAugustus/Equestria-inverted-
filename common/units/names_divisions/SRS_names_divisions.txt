@@ -1,0 +1,26 @@
+﻿SRS_MILITIA_01 =
+{
+	name = "Socialist Fighting Brigade"
+
+	for_countries = { SRS }
+
+	can_use = { 
+		tag = SRS 
+		has_government = communism
+	}
+
+	division_types = { "infantry" "magical_infantry" "knights" "light_armor" "medium_armor" "mechanized" "motorized" "mountaineers" }
+
+	fallback_name = "No.%d Brigade"
+	ordered =
+	{
+		1 = { "No.%d Brigade 'The Left Hand of Darkness'" }
+		2 = { "No.%d Brigade 'The Disposessed'" }
+		3 = { "No.%d Brigade 'Red Mars'" }
+		4 = { "No.%d Brigade 'The Master'" }
+		5 = { "No.%d Brigade 'Margarita'" }
+		6 = { "No.%d Brigade 'Pedagogy of the Oppressed'" }
+		7 = { "No.%d Brigade 'The Conquest of Bread'" }
+	}
+}
+

@@ -1,0 +1,896 @@
+focus_tree = {
+	id = olenia_pragmatic
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = OLE
+			has_country_flag = OLE_pragmatic_Velvet_flag
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1200 y = 1000 }
+#Preparations for greatnesss
+	focus = {
+		id = OLE_our_greatness
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 25
+		y = 0
+		cost = 1
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	
+	#begin further army modernisetion
+	focus = {
+		id = OLE_begin_further_army_modernisation
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 5
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = OLE_our_greatness
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+		
+		focus = {
+		id = OLE_begin_reforming_the_officer_corps
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_begin_further_army_modernisation }
+		x = 1
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			army_experience = 20
+		}
+		}
+		
+		focus = {
+		id = OLE_invite_warlords_to_train_our_officers
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_begin_reforming_the_officer_corps }
+		x = 1
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		remove_ideas = OLE_less_incompetent_officers_1
+		add_ideas = OLE_less_incompetent_officers_2
+		}
+		}focus = {
+		id = OLE_begin_reforming_the_officer_corps
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_new_artillery }
+		prerequisite = { focus = OLE_new_weapons }
+		x = 1
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			army_experience = 20
+		}
+		}
+		
+		focus = {
+		id = OLE_wargames_in_the_icy_wastes 
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_invite_warlords_to_train_our_officers }
+		x = 1
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		swap_ideas = {
+		remove_ideas = OLE_less_incompetent_officers_2
+		add_ideas = OLE_less_incompetent_officers_3
+		}
+		}
+		}
+		focus = {
+		id = OLE_invite_foreign_instructors
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_wargames_in_the_icy_wastes }
+		x = 1
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		swap_ideas = {
+		remove_ideas = OLE_less_incompetent_officers_3
+		add_ideas = OLE_less_incompetent_officers_4
+		}
+		}
+		}
+		focus = {
+		id = OLE_promote_competent_soldiers
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_invite_foreign_instructors }
+		x = 1
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		remove_ideas = OLE_less_incompetent_officers_4
+		}
+		}
+		
+				focus = {
+		id = OLE_new_doctrines
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_begin_further_army_modernisation }
+		x = 5
+		y = 2
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		}
+		
+		focus = {
+		id = OLE_infantry_weapon_advancements
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_new_doctrines }
+		x = 3
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+				add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+		}
+		
+		focus = {
+		id = OLE_better_artillery
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_new_doctrines}
+		x = 5
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = arty_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+		}
+		
+		focus = {
+		id = OLE_specialised_batallions
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_new_doctrines }
+		x = 7
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+		}
+		}
+		}
+				focus = {
+		id = OLE_further_doctrinal_advancement 
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_better_artillery }
+		prerequisite = { focus = OLE_specialised_batallions }
+		prerequisite = { focus = OLE_infantry_weapon_advancements }
+		x = 5
+		y = 4
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		}
+		
+		focus = {
+		id = OLE_mechanized_forces
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_further_doctrinal_advancement }
+		x = 3
+		y = 5
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		name = mech_army_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+				ahead_reduction = 1
+		}
+		}
+		
+		focus = {
+		id = OLE_elites
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_further_doctrinal_advancement }
+		x = 5
+		y = 5
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+		}
+		
+		focus = {
+		id = OLE_further_weapon_advancements 
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_further_doctrinal_advancement }
+		x = 7
+		y = 5
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+		}
+		
+		focus = {
+		id = OLE_harmonist_help_at_improving_landships
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_mechanized_forces }
+		x = 3
+		y = 6
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+		}
+		
+		focus = {
+		id = OLE_mountaineers
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_elites }
+		x = 4
+		y = 7
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+				add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+			}
+		}
+		}
+		
+		focus = {
+		id = OLE_marines 
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_elites }
+		x = 6
+		y = 7
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+				add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				technology = marines
+				technology = marines2
+				technology = marines3
+			}
+		}
+		}
+		
+				focus = {
+		id = OLE_magical_weapons
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_further_weapon_advancements }
+		x = 7
+		y = 6
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				technology = magical_weapons
+				technology = magical_weapons1
+				technology = magical_weapons2
+				technology = magical_weapons3
+			}
+		}
+		}
+			focus = {
+		id = OLE_advanced_artillery
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OLE_further_weapon_advancements }
+		x = 9
+		y = 6
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = arty_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+		}
+#Grand navy
+		focus = {
+		id = OLE_grand_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = OLE_our_greatness }
+		x = 11
+		y = 1
+		cost = 10.00
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[Root.GetName]: Focus OLE_sacrifices_to_ukko"#Auto-logging
+			navy_experience = 10
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = OLE_our_naval_traditions
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = OLE_grand_navy }
+		x = 10
+		y = 2
+		completion_reward = {
+			log = "[Root.GetName]: Focus OLE_new_vikings"#Auto-logging
+			add_ideas = OLE_navy_school
+			add_tech_bonus = {
+				name = race_bonus
+				bonus = 0.5
+				ahead_reduction = 2
+				category = deer_navy_tech
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = OLE_learn_from_our_past
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite =  { focus = OLE_grand_navy  }
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = base_strike
+					is_researching_technology = base_strike
+				}
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_fleet_in_being
+			}
+		}
+	}
+	focus = {
+		id = OLE_our_navy_will_be_greatest
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 11
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = OLE_learn_from_our_past }
+		prerequisite = { focus = OLE_our_naval_traditions }
+		completion_reward = {
+			navy_experience = 10
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = OLE_Destroyers
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = OLE_our_navy_will_be_greatest }
+
+		available_if_capitulated = yes
+
+		x = 10
+		y = 4
+
+		cost = 5
+		ai_will_do = { factor = 10 }
+        
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = OLE_Battlecruisers
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = OLE_our_navy_will_be_greatest }
+
+		available_if_capitulated = yes
+
+		x = 12
+		y = 4
+
+		cost = 5
+		ai_will_do = { factor = 10 }
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = bc_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = OLE_Light_Cruisers
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = { focus = OLE_Destroyers }
+
+		available_if_capitulated = yes
+
+		x = 9
+		y = 5
+
+		cost = 
+		ai_will_do = { factor = 10 }
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = cl_tech
+			}
+		}
+	}
+	focus = {
+		id = OLE_Heavy_Cruisers
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = OLE_Destroyers }
+		prerequisite = { focus = OLE_Battlecruisers }
+
+		available_if_capitulated = yes
+
+		x = 11
+		y = 5
+
+		cost = 10
+		ai_will_do = { factor = 10 }
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = ca_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = OLE_Battleships
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = OLE_Battlecruisers }
+
+		available_if_capitulated = yes
+
+		x = 13
+		y = 5
+
+		cost = 10
+		ai_will_do = { factor = 10 }
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+	
+		
+	focus = {
+		id = OLE_finance_harmonist_airforce_expansion
+		icon = GFX_goal_generic_build_airforce
+		cost = 5
+		prerequisite = { focus = OLE_our_greatness }
+		x = 17
+		y = 1
+
+		ai_will_do = { factor = 30 }
+
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	
+	focus = {
+		id = OLE_begin_developing_an_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = OLE_finance_harmonist_airforce_expansion
+		}
+
+		x = 17
+		y = 2
+		ai_will_do = { factor = 30 }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = OLE_develop_our_fighters
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = OLE_begin_developing_an_air_doctrine }
+		x = 17
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				}
+				}
+				}
+focus = {
+		id = OLE_expand_our_airfields
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 17
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = OLE_develop_our_fighters
+		}
+		available_if_capitulated = no
+		completion_reward = {
+		224 = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+		}
+		
+		focus = {
+		id = OLE_continue_developing_an_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = OLE_expand_our_airfields
+			}
+
+		x = 17
+		y = 5
+		ai_will_do = { factor = 30 }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		}
+		
+		
+				
+				
+				
+#contact Johan
+	focus = {
+		id = OLE_letters_to_Johan
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 21
+		y = 1
+		cost = 1
+		prerequisite = { focus = OLE_our_greatness }
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		STL = {
+			exists = yes
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			is_subject = no
+			NOT = { has_war_with = ROOT }
+		}
+	}
+		completion_reward = {
+		country_event = { days = 1 id = olenia.9 }
+		}
+	}
+	
+	#
+	focus = {
+		id = OLE_expand_care_for_the_poor
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 22
+		y = 2
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = { focus = OLE_letters_to_Johan } 
+		available = { has_country_flag = OLE_Johan_response_flag }
+		completion_reward = {
+		add_ideas = OLE_care_for_the_poor_idea
+		}
+	}
+	focus = {
+		id = OLE_schools_for_the_middle_class
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 20
+		y = 2
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = { focus = OLE_letters_to_Johan } 
+		available = { has_country_flag = OLE_Johan_response_flag }
+		completion_reward = {
+		country_event = { days = 1 id = olenia.11 }
+		}
+	}
+	
+	focus = {
+		id = OLE_Empress_of_the_people
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 21
+		y = 3
+		cost = 1
+		prerequisite = { focus = OLE_schools_for_the_middle_class }
+		prerequisite = { focus = OLE_expand_care_for_the_poor } 
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		STL = {
+			exists = yes
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			is_subject = no
+			NOT = { has_war_with = ROOT }
+		}
+	}
+		completion_reward = {
+		country_event = { days = 1 id = olenia.13 }
+		}
+		add_stability = 0.1
+	}
+	
+	focus = {
+		id = OLE_invite_Johan_to_olenia
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 21
+		y = 4
+		cost = 1
+		prerequisite = { focus = OLE_Empress_of_the_people }
+		available_if_capitulated = no
+		available = {
+		is_subject = no
+		STL = {
+			exists = yes
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			is_subject = no
+			NOT = { has_war_with = ROOT }
+		}
+	}
+		completion_reward = {
+		country_event = { days = 5 id = olenia.14 }
+		}
+	}
+	
+	focus = { 
+		id = OLE_organize_the_Hjortland_ball
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 22
+		y = 5
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = { focus = OLE_invite_Johan_to_olenia } 
+		available = { has_country_flag = OLE_Johan_arrives_flag }
+		completion_reward = {
+        country_event = { days = 1 id = olenia.15 }
+		}
+	}
+	
+	focus = {
+		id = OLE_
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 1 }
+		x = 22
+		y = 6
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = { focus = OLE_organize_the_Hjortland_ball } 
+		completion_reward = {
+		country_event = { days = 1 id = olenia.11 }
+		}
+	}

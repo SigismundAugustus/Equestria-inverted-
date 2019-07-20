@@ -2,16 +2,16 @@ state={
 	id=92
 	name="STATE_92"
 	state_category = pastoral
-	
+
 	history={
 		owner = BUF
 		add_core_of = BUF
-		
+
 	}
-	
+
 	provinces={
 		619 3623 3627 6604 6611 6647 9591 9608 11522 11574 11577
 	}
-	manpower=20590
+	manpower=21590
 	buildings_max_level_factor=1.000
 }

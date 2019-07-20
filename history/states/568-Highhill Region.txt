@@ -11,8 +11,7 @@ state={
 	}
 	state_category = pastoral
 	history = {
-		owner = GRI
-		add_core_of = GRI
+		owner = BRZ
 		add_core_of = BRZ
 	}
 	manpower=98780

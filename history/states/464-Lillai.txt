@@ -17,7 +17,7 @@ state={
 		}
 		victory_points = { 12729 5 }
 	}
-	manpower=406709
+	manpower=506709
 	buildings_max_level_factor=1.000
 	state_category=large_town
 }

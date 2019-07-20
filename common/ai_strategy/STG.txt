@@ -19,7 +19,7 @@ war_cooperation = {
 	abort = {
 		EQS = { exists = no }
 	}
-	
+
 	ai_strategy = {
 		type = alliance
 		id = "EQS"
@@ -42,7 +42,7 @@ changeling_threat = {
 			CHN = { is_subject_of = EQS }
 		}
 	}
-	
+
 	ai_strategy = {
 		type = conquer
 		id = "CHN"
@@ -145,5 +145,32 @@ STG_support_commie_EQS = {
 		type = support
 		id = "STG"
 		value = 300
+	}
+}
+
+support_OLE_com = {
+	enable = {
+		tag = STG
+		has_government = communism
+		OLE = {
+			has_government = communism
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_government = communism }
+			OLE = { NOT = { has_government = communism } }
+		}
+	}
+
+	ai_strategy = {
+		type = support
+		id = "OLE"
+		value = 75
+	}
+	ai_strategy = {
+		type = befriend
+		id = "OLE"
+		value = 25
 	}
 }

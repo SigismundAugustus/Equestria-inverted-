@@ -1,56 +1,57 @@
-﻿capital = 307
+﻿capital = 57
 
 oob = "STL_1007"
 
-set_research_slots = 3
+set_research_slots = 2
 
 set_technology = {
-	deer_race = 1
+	pony_race = 1
 	melee_weapons = 1
 	melee_weapons1 = 1
 	pre_gw_artillery = 1
+	gwtank = 1
 	infantry_weapons = 1
 	interwar_antitank = 1
-	motorised_infantry
 	gw_artillery = 1
-	tech_support = 1
-	early_submarine = 1
-	basic_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	tech_mountaineers = 1
-	tech_recon = 1
-	transport = 1
 }
 
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+
+generic_DD_template = yes
+generic_CL_template = yes
 
 set_convoys = 69
 set_politics = {
-	
+
 	parties = {
 		democratic = {
-			popularity = 50
+			popularity = 23
 		}
-		
+
 		fascism = {
-			popularity = 20
+			popularity = 1
 		}
-		
+
 		communism = {
-			popularity = 20
+			popularity = 75
 			#banned = no #default is no
 		}
-		
+
 		neutrality = {
-			popularity = 10
+			popularity = 1
 		}
 	}
-	
-	ruling_party = democratic
+
+	ruling_party = neutrality
 	last_election = "1000.10.10"
 	election_frequency = 36
 	elections_allowed = no
@@ -58,41 +59,20 @@ set_politics = {
 
 
 add_ideas = {
-STL_ties_with_olenia
-STL_ties_with_the_changelings
+	STL_city_state
+	STL_equality_past
 }
 
 set_stability = 0.5
-set_war_support = 0.5
 
 create_country_leader = {
-	name = ""
-	desc = "POLITICS_DITA"
-	picture = "Dita.dds"
+	name = "Feather Bangs"
+	desc = "POLITICS_FEATHERBANGS"
+	picture = "FeatherBangs.tga"
 	expire = "1965.1.1"
-	ideology = despotism
-	traits = { Cornered_Fox
-	}
-}
-
-create_country_leader = {
-	name = "Thorax"
-	
-	picture = "DitaFash.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = { Cornered_Fox Dictator
-		
-	}
-}
-
-create_country_leader = {
-	name = "Duke Johan The Beloved"
-	desc = "POLITICS_KINGJOHAN_DESC"
-	picture = "DeerKing.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socialism
 	traits = {
+
 	}
 }
 
@@ -103,14 +83,14 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-		
+
 	}
 }
 create_corps_commander = {
 	name = "Grey Bread"
 	picture = "GreyBread.tga"
 	traits = { commissar_general }
-	skill = 5
+	skill = 4
 	attack_skill = 2
 	defense_skill = 3
 	planning_skill = 4
@@ -136,4 +116,8 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 1
 	female = yes
+}
+
+set_rule = {
+	can_generate_female_aces = yes
 }

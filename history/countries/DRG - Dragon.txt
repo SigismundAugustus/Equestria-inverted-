@@ -8,23 +8,51 @@ set_technology = {
 	melee_weapons = 1
 	melee_weapons1 = 1
 	pre_gw_artillery = 1
+	generic_race = 1
 }
 
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+generic_DD_template = yes
+generic_CL_template = yes
 
 set_convoys = 11
 set_politics = {
-	
+
 	parties = {
-		
+
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
-		
+
 		neutrality = {
 			popularity = 100
 		}
@@ -32,7 +60,7 @@ set_politics = {
 			popularity = 0
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1000.10.10"
 	election_frequency = 36
@@ -43,6 +71,29 @@ set_politics = {
 add_ideas = {
 	Dragons
 	tribal_society
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = TAL
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = MIT
+		autonomous_state = autonomy_nominal_vassal
+	}
+	set_autonomy = {
+		target = FEZ
+		autonomous_state = autonomy_nominal_vassal
+	}
+	else = {
+		puppet = TAL
+		puppet = MIT
+		puppet = FEZ
+	}
 }
 
 set_stability = 0.5
@@ -80,7 +131,7 @@ create_country_leader = {
 	picture = "rubydragon.tga"
 	ideology = anarchist_communism
 	traits = {
-		
+
 	}
 }
 
@@ -89,4 +140,8 @@ create_field_marshal = {
 	picture = "torch.tga"
 	traits = { old_guard offensive_doctrine }
 	skill = 1
+}
+
+set_rule = {
+	can_generate_female_aces = yes
 }

@@ -11,7 +11,6 @@ state={
 	history = {
 		owner = GRI
 		add_core_of = GRI
-		add_core_of = KAT
 		victory_points = { 1034 15 }
 		victory_points = { 10713 2 }
 		victory_points = { 4820 3 }

@@ -4,74 +4,111 @@
 Scroup
 Cyrus
 Featherus
-Psody
 Yard1
 
 #CONTRIBUTORS
+Adagio
 Algol
+ArcaneTesla
+Arcus
 Arcy
+Archivator-RUS
 Axidant
-Batpony Monarch
 Bipen
 BunnyShrubby
+Carvor
+Cazzym
 Cherrypone
+cijik
 Cody MacArthur
+Cofido
 Computational Pragmatist
+Cynewulf
 Echo
+Feitanakin
 Flake
 Flying Dutchpony
 DasPanzer
+Dr. Gilderoy
+Dr. Njitram
 dingosupastar
+Dzhasa
 gdvp111
 Gara-The-Author
 Gearheart
+gelter
+GonzaloIrkatan
+Gorkamorka
 GreatPretender
 Hellstorm12
+Herzog_von_Kessel
+Husarz aka Luna
 Hysterical Fox
 Илларион
 Indyclone77
+Jaspy
+jnzsblzs
 Kaltrop
 King_Wilson
 Kuche
 Lovenought
 Lumi
 Mageytash
+MarkipOOn
 Miltonian
 Murp
 Myxine
-Nico von Hapsburg
-NuclearBlizzard
+Nico
+NCBlizzard
+NuclearWaffles
 Orion
 Orwell
 Pipsqueak
 Printik
+Professional Horse
+Psody
+Raminy
+Raptor_Jesus
 Redheart
 Rich May
+Riley Vinchers
+Sbadkins4 'The Captain'
+SerPounce
+Sesek1
 Shade
 Shalax
 Sinister
 Sparkplug
 StDeadRa
 Stemis
+Sweet Chrysalis
 ThatZealousOne
 TheFuego
 TheGreatPretender
 Thomman
 Thor
+Twotail813
+Tzyca
 Udy
+Upevig
 Valmoric
+VoidTemplar
 Wells
+Xilg
 
 #TRANSLATORS
 Big Bruddah
 Cwop
 Damiyan
 Gereval
+GrandPri
 Mr. PumzA
 Murena
+Niezow
 Vasily
 Vizor
 Scrog
+Sosninsky
 
 #SPECIAL THANKS TO:
 Lauren Faust
@@ -79,10 +116,15 @@ Hasbro
 DHX Media
 Paradox Interactive
 Paradox Development Studio
+RainyDay
 Greatexperiment
 Eight Years' War of Resistance
 Kaiserreich Team
 ThePinkPanzer
+Cherios
 HoI 4 Modding Coop
 All artists & creators whose work has been used
 Our wonderful community
+
+#MAIN MENU ART BY:
+Shamanguli

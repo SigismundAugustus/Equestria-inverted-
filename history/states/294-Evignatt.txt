@@ -7,12 +7,12 @@ state={
 	resources={
 		crystals = 7
 	}
-	manpower=117400
+	manpower=11700
 	history={
 		owner = OLE
 		add_core_of = OLE
 	}
-	
+
 	state_category = wasteland
 	buildings_max_level_factor=1.000
 }

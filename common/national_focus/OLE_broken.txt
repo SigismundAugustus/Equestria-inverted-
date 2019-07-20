@@ -1,0 +1,31 @@
+focus_tree = {
+	id = olenia_broken 
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = OLE
+			has_country_flag = OLE_broken_Velvet_flag
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1200 y = 1000 }
+	focus = {
+		id = OLE_continue_the_march_forwards
+		icon = GFX_goal_support_democracy
+		bypass = {
+			NOT = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		ai_will_do = { factor = 1 }
+		x = 18
+		y = 0
+		cost = 5
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}

@@ -7,12 +7,10 @@ state={
 	state_category = town
 	history = {
 		victory_points = { 4190 3 }
-		owner = GRI
-		add_core_of = GRI
-		add_core_of = KAT
+		owner = LSC
+		add_core_of = LSC
 		buildings = {
 			infrastructure = 1
-			air_base = 1
 		}
 	}
 	manpower=467905

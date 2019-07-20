@@ -7,10 +7,9 @@ state={
 	manpower=1138
 	history={
 		owner = YAK
-		add_core_of = PLB
 		add_core_of = YAK
 	}
-	
+
 	state_category = wasteland
 	buildings_max_level_factor=1.000
 }

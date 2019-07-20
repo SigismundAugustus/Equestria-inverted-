@@ -7,8 +7,7 @@ state={
 	}
 	state_category = town
 	history = {
-		owner = GRI
-		add_core_of = GRI
+		owner = FEA
 		add_core_of = FEA
 		victory_points = { 4777 5 }
 		buildings = {

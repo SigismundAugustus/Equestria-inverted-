@@ -8,15 +8,12 @@ state={
 	state_category = city
 	history = {
 		add_core_of = STW
-		add_core_of = GRI
-		owner = GRI
+		owner = STW
 		victory_points = { 12399 20 }
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
 			arms_factory = 2
-			air_base = 1
-			
 		}
 	}
 	manpower=1450607

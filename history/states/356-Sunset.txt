@@ -15,8 +15,9 @@ state={
 			arms_factory = 1
 			dockyard = 1
 			10005 = { naval_base = 5 }
+			air_base = 1
 		}
 	}
-	manpower=407455
+	manpower=2107455
 	buildings_max_level_factor=1.000
 }

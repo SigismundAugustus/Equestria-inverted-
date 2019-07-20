@@ -15,8 +15,6 @@ state={
 		victory_points = { 1973 3 }
 		owner = JER
 		add_core_of = JER
-		add_core_of = AET
-		add_core_of = HEL
 		buildings = {
 			infrastructure = 1
 		}

@@ -11,8 +11,7 @@ state={
 	}
 	state_category = city
 	history = {
-		owner = GRI
-		add_core_of = GRI
+		owner = YAL
 		add_core_of = YAL
 		victory_points = { 12691 20 }
 		victory_points = { 10570 3 }
@@ -21,10 +20,9 @@ state={
 			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 2
-			air_base = 1
 		}
 	}
-	
+
 	manpower=1356700
 	buildings_max_level_factor=1.000
 }

@@ -2,15 +2,18 @@ state={
 	id=611
 	name="STATE_611"
 	provinces={
-		697 837 2151 2216 3811 4160 4515 4851 5068 5177 6105 7872 8019 8054 9762 10777 11745 11765 12504 12677
+		697 837 2151 2216 3811 4160 4515 4851 4897 5068 5177 6105 7872 7980 8019 8054 9762 10777 11745 11765 12504 12677
 	}
 	resources={
 		steel=20.000
 	}
 	state_category = pastoral
 	history = {
-		owner = RIV
-		add_core_of = RIV
+		owner = LCT
+		add_core_of = LCT
+		victory_points = {
+			8054 5
+		}
 	}
 	manpower=120789
 	buildings_max_level_factor=1.000

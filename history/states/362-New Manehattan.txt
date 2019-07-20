@@ -8,19 +8,19 @@ state={
 	provinces={
 		78 829 6194 8085 10923
 	}
-	state_category = town
+	state_category = metropolis
 	history = {
 		owner = TAL
 		add_core_of = TAL
 		victory_points = { 829 20 }
 		buildings = {
-			infrastructure = 5
+			infrastructure = 6
 			industrial_complex = 1
 			arms_factory = 1
-			dockyard = 1
+			dockyard = 2
 			829 = { naval_base = 3 }
 		}
 	}
-	manpower=523450
+	manpower=2523450
 	buildings_max_level_factor=1.000
 }

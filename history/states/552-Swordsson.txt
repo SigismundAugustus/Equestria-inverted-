@@ -7,15 +7,16 @@ state={
 	}
 	state_category = large_town
 	history = {
-		owner = LNS
-		add_core_of = LNS
-		victory_points = { 9795 15 }
+		owner = LSC
+		add_core_of = LSC
+		victory_points = { 9918 15 }
+		victory_points = { 3912 5 }
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
 			arms_factory = 2
 		}
 	}
-	manpower=705666
+	manpower=955666
 	buildings_max_level_factor=1.000
 }

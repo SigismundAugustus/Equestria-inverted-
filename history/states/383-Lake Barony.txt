@@ -8,7 +8,6 @@ state={
 	history = {
 		owner = BOI
 		add_core_of = BOI
-		add_core_of = LAK
 		victory_points = { 9604 5 }
 		buildings = {
 			infrastructure = 2

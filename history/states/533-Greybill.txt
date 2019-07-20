@@ -9,7 +9,6 @@ state={
 	history={
 		owner = WNG
 		add_core_of = WNG
-		add_core_of = FAL
 		victory_points = { 12638 3 }
 		buildings = {
 			infrastructure = 1

@@ -6,8 +6,7 @@ state={
 	}
 	state_category = town
 	history = {
-		owner = GRI
-		add_core_of = GRI
+		owner = BRZ
 		add_core_of = BRZ
 		buildings = {
 			infrastructure = 1

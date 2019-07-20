@@ -88,19 +88,18 @@ ideas = {
 
 
 	army_chief = {
-		CCN_loney_guy1 = {
-			picture = loney_guy
+		CCNkommandant0 = {
+			picture = chnkommandant0
 			allowed = {
 				original_tag = CCN
 			}
 			available = {
 				if = {
 					limit = { country_exists = CHN }
-					NOT = { CHN = { has_idea = loney_guy } }
+					NOT = { CHN = { has_idea = chnkommandant0 } }
 				}
 			}
 			traits = { army_chief_offensive_2 }
-
 			ai_will_do = {
 				factor = 1
 			}
@@ -258,8 +257,6 @@ ideas = {
 			traits = { navy_chief_decisive_battle_2 }
 
 			available = {
-				NOT = {	has_completed_focus = chn_navymimic}
-				hidden_trigger = { has_unit_leader = 610 }
 			}
 			ai_will_do = {
 				factor = 0.1
@@ -274,8 +271,6 @@ ideas = {
 
 			traits = { navy_chief_commerce_raiding_3 }
 			available = {
-				NOT = {	has_completed_focus = chn_navylysander}
-				hidden_trigger = { has_unit_leader = 609 }
 			}
 			ai_will_do = {
 				factor = 0.1
@@ -362,7 +357,7 @@ ideas = {
 					NOT = { CHN = { has_idea = chnhighcom3 } }
 				}
 			}
-			traits = { air_airborne_2 }
+			traits = { army_logistics_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -772,8 +767,14 @@ ideas = {
 				always = no
 			}
 
+			available = {
+				country_exists = CHN
+				country_exists = CCN
+			}
+
 			rule = {
 				can_join_factions = no
+				can_not_declare_war = yes
 			}
 			modifier = {
 				war_support_factor = 0.10
@@ -791,7 +792,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = political_divisions
 
 		}
 		CCN_Svarm_Militia = {
@@ -803,8 +804,8 @@ ideas = {
 			modifier = {
 				conscription_factor = 0.02
 				army_morale_factor = 0.2
-				army_org_Factor = -0.2
-				planning_speed = -0.75
+				army_org_Factor = -0.15
+				planning_speed = -0.5
 			}
 
 			removal_cost = -1
@@ -836,9 +837,9 @@ ideas = {
 			}
 
 			modifier = {
+				war_support_factor = -0.3
 				army_morale_factor = -0.1
 				conscription = -0.0075
-				consumer_goods_factor = 0.01
 				production_factory_max_efficiency_factor = -0.2
 			}
 
@@ -854,11 +855,12 @@ ideas = {
 			}
 
 			modifier = {
+				stability_factor = -0.1
 				production_factory_max_efficiency_factor = -0.25
-				industrial_capacity_factory = -0.3
+				industrial_capacity_factory = -0.2
 				production_speed_buildings_factor = -0.5
 				min_export = -0.3
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.04
 				communism_drift = 0.02
 			}
 
@@ -911,7 +913,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.05
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 			}
 
 			removal_cost = -1
@@ -1074,11 +1076,11 @@ ideas = {
 				always = no
 			}
 			available = {
-				country_exists = EQS
+				country_exists = event_target:equestria
 				country_exists = CCN
-				NOT = { has_war_with = EQS }
+				NOT = { has_war_with = event_target:equestria }
 				CCN = { has_government = democratic }
-				EQS = { has_government = democratic }
+				event_target:equestria = { has_government = democratic }
 			}
 			modifier = {
 				production_speed_buildings_factor = 0.1

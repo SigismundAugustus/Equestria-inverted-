@@ -16,7 +16,6 @@ state={
 		victory_points = { 1948 4 }
 		owner = JER
 		add_core_of = JER
-		add_core_of = AET
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

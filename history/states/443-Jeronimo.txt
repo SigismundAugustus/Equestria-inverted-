@@ -10,10 +10,9 @@ state={
 	state_category = rural
 	history = {
 		add_core_of = STW
-		add_core_of = GRI
-		owner = GRI
+		owner = STW
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 	}
 	manpower=340567

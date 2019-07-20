@@ -2,6 +2,7 @@ ideas = {
 
 	city_idea = {
 		law = yes
+
 		proper_science_base = {
 			level = 1
 			traits = { science_idea }
@@ -68,7 +69,7 @@ ideas = {
 
 			}
 			modifier = {
-				research_time_factor = 0.3
+				research_speed_factor = -0.3
 				political_power_gain = 0.1
 			}
 			ai_will_do = {
@@ -87,6 +88,7 @@ ideas = {
 			}
 			cancel_if_invalid = yes
 		}
+
 		better_science_base = {
 			level = 3
 			traits = { science_idea }
@@ -116,7 +118,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				research_time_factor = 0.55
+				research_speed_factor = -0.55
 				political_power_gain = 0.2
 			}
 			ai_will_do = {
@@ -135,6 +137,7 @@ ideas = {
 			}
 			cancel_if_invalid = yes
 		}
+
 		poor_science_base = {
 			level = 4
 			traits = { science_idea }
@@ -157,7 +160,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				research_time_factor = 0.8
+				research_speed_factor = -0.8
 				political_power_gain = 0.3
 			}
 			ai_will_do = {
@@ -174,11 +177,15 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
+
 		dummy_idea_science = {
-			level = 5
-			cost = -1
-			removal_cost = -1
 			allowed = {
+				always = yes
+			}
+			visible = {
+				has_idea = dummy_idea_science
+			}
+			available = {
 				has_idea = dummy_idea_science
 			}
 			default = yes

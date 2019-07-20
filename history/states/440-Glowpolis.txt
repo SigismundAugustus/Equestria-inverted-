@@ -11,8 +11,7 @@ state={
 	}
 	state_category = rural
 	history = {
-		owner = GRI
-		add_core_of = GRI
+		owner = FEA
 		add_core_of = FEA
 		victory_points = { 7790 5 }
 	}

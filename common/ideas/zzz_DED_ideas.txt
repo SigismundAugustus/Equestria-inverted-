@@ -114,6 +114,8 @@ ideas = {
 			picture = canterlot_defeat
 
 			modifier = {
+				drift_defence_factor = 1
+				foreign_subversive_activites = -1
 				conscription = 0.2
 				partisan_effect = 1
 				monthly_population = 1
@@ -124,12 +126,13 @@ ideas = {
 				heat_attrition_factor = -1
 				winter_attrition_factor = -1
 				non_core_manpower = -1
-				research_time_factor = 1
+				research_speed_factor = -1
 				training_time_factor = -0.1
 				opinion_gain_monthly_factor = -1
+				equipment_capture = 0.05
 			}
 			research_bonus = {
-				magical_tech = 0.2
+				magical_tech = 0.1
 			}
 		}
 	}
@@ -140,7 +143,7 @@ ideas = {
 		DED_Blood_Guild_Idea11 = {
 			picture = CRY_communist_crystals
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -159,7 +162,7 @@ ideas = {
 		DED_Blood_Guild_Idea12 = {
 			picture = CRY_communist_crystals
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -170,7 +173,7 @@ ideas = {
 
 				monthly_population = -0.7
 				army_infantry_attack_factor = 0.10
-				
+
 
 			}
 		}
@@ -180,7 +183,7 @@ ideas = {
 		DED_Blood_Guild_Idea13 = {
 			picture = CRY_communist_crystals
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -191,7 +194,7 @@ ideas = {
 
 				monthly_population = -0.7
 				army_infantry_attack_factor = 0.10
-				research_time_factor = -2
+				research_speed_factor = 2
 
 			}
 		}
@@ -201,7 +204,7 @@ ideas = {
 		DED_Blood_Guild_Idea21 = {
 			picture = SOV_scientist_defect
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -220,7 +223,7 @@ ideas = {
 		DED_Blood_Guild_Idea14 = {
 			picture = CRY_communist_crystals
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -231,7 +234,7 @@ ideas = {
 
 				army_infantry_attack_factor = 0.20
 				monthly_population = -0.7
-				research_time_factor = -3
+				research_speed_factor = 3
 
 			}
 		}
@@ -241,7 +244,7 @@ ideas = {
 		DED_Blood_Guild_Idea22 = {
 			picture = SOV_scientist_defect
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -250,7 +253,7 @@ ideas = {
 
 			modifier = {
 
-				research_time_factor = -1
+				research_speed_factor = 1
 				army_morale_factor = 0.10
 				max_planning = 0.10
 
@@ -262,7 +265,7 @@ ideas = {
 		DED_Blood_Guild_Idea23 = {
 			picture = SOV_scientist_defect
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -271,7 +274,7 @@ ideas = {
 
 			modifier = {
 
-				research_time_factor = -2
+				research_speed_factor = 2
 				army_morale_factor = 0.10
 				max_planning = 0.10
 
@@ -283,7 +286,7 @@ ideas = {
 		DED_Blood_Guild_Idea24 = {
 			picture = SOV_scientist_defect
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -295,7 +298,7 @@ ideas = {
 				army_morale_factor = 0.10
 				max_planning = 0.10
 
-				research_time_factor = -2
+				research_speed_factor = 2
 				army_speed_factor = 0.10
 			}
 		}
@@ -303,9 +306,9 @@ ideas = {
 
 	country = {
 		DED_Blood_Queen_Idea = {
-			picture = nkvd_2
+
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -329,7 +332,7 @@ ideas = {
 			modifier = {
 
 				monthly_population = 0.4
-				
+
 
 			}
 
@@ -342,7 +345,7 @@ ideas = {
 		DED_Soc_Bone_Idea12 = {
 			picture = saf_history_of_segregation
 			modifier = {
-				
+
 				monthly_population = 0.4
 
 				conscription = 0.05
@@ -358,7 +361,7 @@ ideas = {
 		DED_Soc_Bone_Idea13 = {
 			picture = saf_history_of_segregation
 			modifier = {
-				
+
 				monthly_population = 0.4
 				conscription = 0.05
 				army_org_Factor = 0.25
@@ -418,7 +421,7 @@ ideas = {
 		DED_Soc_Bone_Idea15 = {
 			picture = saf_history_of_segregation
 			modifier = {
-				
+
 				monthly_population = 0.4
 				conscription = 0.05
 				army_org_Factor = 0.50
@@ -436,7 +439,7 @@ ideas = {
 		DED_Soc_Bone_Idea16 = {
 			picture = saf_history_of_segregation
 			modifier = {
-				
+
 				monthly_population = 1.4
 				conscription = 0.05
 				army_org_Factor = 0.50
@@ -481,7 +484,7 @@ ideas = {
 		DED_Improve_Ghoul_Idea = {
 			picture = FRA_motorized_focus
 			modifier = {
-				research_time_factor = -0.5
+				research_speed_factor = 0.5
 			}
 
 		}
@@ -493,7 +496,7 @@ ideas = {
 		DED_Improve_Ghoul2_Idea = {
 			picture = FRA_motorized_focus
 			modifier = {
-				research_time_factor = -0.5
+				research_speed_factor = 0.5
 				attrition = -0.5
 			}
 
@@ -506,7 +509,7 @@ ideas = {
 		DED_Improve_Ghoul3_Idea = {
 			picture = FRA_motorized_focus
 			modifier = {
-				research_time_factor = -0.5
+				research_speed_factor = 0.5
 				attrition = -0.5
 				training_time_factor = -0.1
 			}
@@ -520,14 +523,14 @@ ideas = {
 		DED_Brain_Market_Idea = {
 			picture = generic_research_bonus
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
 			}
 
 			modifier = {
-				research_time_factor = -0.3
+				research_speed_factor = 0.3
 
 			}
 
@@ -540,7 +543,7 @@ ideas = {
 		DED_Brain_Market2_Idea = {
 			picture = generic_research_bonus
 			modifier = {
-				research_time_factor = -0.3
+				research_speed_factor = 0.3
 				consumer_goods_factor = -0.1
 			}
 
@@ -553,7 +556,7 @@ ideas = {
 		DED_Flesh_Market_Idea = {
 			picture = generic_local_self_management
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_civil_war = {
 				always = yes
@@ -650,187 +653,240 @@ ideas = {
 
 	country = {
 		DED_converting = {
+			picture = ENG_the_war_to_end_all_wars
 			modifier = {
 				political_power_factor = -0.05
 			}
 		}
 	}
-	
+
 	country = {
-		
+
 		DED_Winning_1_Idea = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
 				defence = -0.05
 				army_attack_factor = -0.05
 				army_morale_factor = -0.10
 			}
 		}
-		
+
 	}
 	country = {
-		
+
 		DED_Winning_2_Idea = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
 				defence = -0.10
 				army_attack_factor = -0.10
 				army_morale_factor = -0.10
 			}
 		}
-		
+
 	}
 	country = {
-		
+
 		DED_Winning_3_Idea = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
 				defence = -0.15
 				army_attack_factor = -0.15
 				army_morale_factor = -0.15
 			}
 		}
-		
+
 	}
 	country = {
-		
+
 		DED_Losing_1_Idea = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
 				defence = 0.05
 				army_attack_factor = 0.05
 				army_morale_factor = 0.10
 			}
 		}
-		
+
 	}
 	country = {
-		
+
 		DED_Losing_2_Idea = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
 				defence = 0.10
 				army_attack_factor = -0.10
 				army_morale_factor = -0.10
 			}
 		}
-		
+
 	}
 	country = {
-		
+
 		DED_Losing_3_Idea = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
 				defence = -0.15
 				army_attack_factor = -0.15
 				army_morale_factor = -0.15
 			}
 		}
-		
+
 	}
-	
+
 	country = {
-		
+
 		DED_bc_pop_growth = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
+				training_time_factor = -0.25
 				monthly_population = 1.0
 			}
 		}
-		
+
 	}
-	
+
 	country = {
-		
+
 		DED_bc_inf_attack = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
 				army_infantry_attack_factor = 0.1
 				army_speed_factor = 0.1
 			}
 		}
-		
+
 	}
 	country = {
-		
+
 		DED_Modern_Technology_Idea = {
-			
+
 			allowed = {
-				always = yes
+				always = no
 			}
-			
+
 			picture = triumphant_will
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
-				research_time_factor = -1
+				research_speed_factor = 1
+				equipment_capture = 0.1
 			}
 		}
-		
+
+	}
+
+	hidden_ideas = {
+		DED_Special_Game_Rule_Buff = {
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_ai = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				# fightyness
+				dig_in_speed_factor = 0.5
+				planning_speed = 0.5
+				army_morale_factor = 0.3
+				land_reinforce_rate = 0.05
+
+				# defensivness
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+
+				attrition = -0.125
+
+				# production/research
+				production_factory_max_efficiency_factor = 0.30
+				production_factory_efficiency_gain_factor = 0.50
+				industrial_capacity_dockyard = 0.8
+				political_power_factor = 0.5
+				research_speed_factor = 1.5
+				production_lack_of_resource_penalty_factor = -0.6
+
+				# fuel
+				army_fuel_consumption_factor = -0.80
+				air_fuel_consumption_factor = -0.80
+				navy_fuel_consumption_factor = -0.80
+
+				# xp gain
+				experience_gain_air_factor = 0.5
+				experience_gain_army_factor = 0.5
+				experience_gain_navy_factor = 0.5
+				experience_gain_army_unit_factor = 0.20
+				experience_gain_navy_unit_factor = 0.20
+				experience_gain_army = 0.03
+			}
+		}
 	}
 }

@@ -11,7 +11,9 @@ state={
 	history = {
 		owner = WNG
 		add_core_of = WNG
-		add_core_of = SIC
+		buildings = {
+			9055 = { naval_base = 1 }
+		}
 	}
 	manpower=56740
 	buildings_max_level_factor=1.000

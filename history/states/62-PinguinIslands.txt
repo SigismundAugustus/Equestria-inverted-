@@ -2,14 +2,13 @@
 state={
 	id=62
 	name="STATE_62"
-	
+
 	history={
-		owner = YAK
-		add_core_of = PLB
-                add_core_of = YAK
-		
+		owner = PNG
+		add_core_of = PNG
+
 	}
-	
+
 	provinces={
 		4775 13094
 	}

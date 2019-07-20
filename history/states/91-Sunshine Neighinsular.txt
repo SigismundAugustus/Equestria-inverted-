@@ -2,20 +2,21 @@ state={
 	id=91
 	name="STATE_91"
 	state_category = rural
-	
+
 	history={
 		owner = BUF
 		add_core_of = BUF
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
+			6670 = { naval_base = 1 }
 		}
-		
-		
+
+
 	}
-	
+
 	provinces={
 		646 3680 6643 6670 6685 6703 9624 9627 9643 11610 11625
 	}
-	manpower=21838
+	manpower=15838
 	buildings_max_level_factor=1.000
 }

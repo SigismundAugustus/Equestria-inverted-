@@ -13,10 +13,9 @@ state={
 	}
 	history={
 		owner = BOI
-		add_core_of = CYA
-		add_core_of = BOI
+		add_core_of = WNG
 		victory_points = { 12433 1 }
 	}
-	manpower=56709
+	manpower=96709
 	buildings_max_level_factor=1.000
 }
